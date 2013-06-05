@@ -13,14 +13,16 @@
 		6C51510D175F7D9C00C7D8B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C51510B175F7D9C00C7D8B6 /* InfoPlist.strings */; };
 		6C51510F175F7D9C00C7D8B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C51510E175F7D9C00C7D8B6 /* main.m */; };
 		6C515113175F7D9C00C7D8B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515112175F7D9C00C7D8B6 /* AppDelegate.m */; };
-		6C515115175F7D9C00C7D8B6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515114175F7D9C00C7D8B6 /* Default.png */; };
-		6C515117175F7D9C00C7D8B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515116175F7D9C00C7D8B6 /* Default@2x.png */; };
-		6C515119175F7D9C00C7D8B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515118175F7D9C00C7D8B6 /* Default-568h@2x.png */; };
 		6C515121175F7D9D00C7D8B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515120175F7D9D00C7D8B6 /* SenTestingKit.framework */; };
 		6C515122175F7D9D00C7D8B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515102175F7D9C00C7D8B6 /* UIKit.framework */; };
 		6C515123175F7D9D00C7D8B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515104175F7D9C00C7D8B6 /* Foundation.framework */; };
 		6C51512B175F7D9D00C7D8B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C515129175F7D9D00C7D8B6 /* InfoPlist.strings */; };
 		6C51512E175F7D9D00C7D8B6 /* The_ButcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C51512D175F7D9D00C7D8B6 /* The_ButcherTests.m */; };
+		6C515141175F80FB00C7D8B6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515140175F80FB00C7D8B6 /* Default.png */; };
+		6C515143175F810E00C7D8B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515142175F810E00C7D8B6 /* Default@2x.png */; };
+		6C515145175F811100C7D8B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515144175F811100C7D8B6 /* Default-568h@2x.png */; };
+		6C51514D175F81D400C7D8B6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C51514C175F81D400C7D8B6 /* icon@2x.png */; };
+		6C51514F175F81D700C7D8B6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C51514E175F81D700C7D8B6 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +46,17 @@
 		6C515110175F7D9C00C7D8B6 /* The Butcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Butcher-Prefix.pch"; sourceTree = "<group>"; };
 		6C515111175F7D9C00C7D8B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C515112175F7D9C00C7D8B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6C515114175F7D9C00C7D8B6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		6C515116175F7D9C00C7D8B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		6C515118175F7D9C00C7D8B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6C51511F175F7D9D00C7D8B6 /* The ButcherTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The ButcherTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C515120175F7D9D00C7D8B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6C515128175F7D9D00C7D8B6 /* The ButcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The ButcherTests-Info.plist"; sourceTree = "<group>"; };
 		6C51512A175F7D9D00C7D8B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C51512C175F7D9D00C7D8B6 /* The_ButcherTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = The_ButcherTests.h; sourceTree = "<group>"; };
 		6C51512D175F7D9D00C7D8B6 /* The_ButcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_ButcherTests.m; sourceTree = "<group>"; };
+		6C515140175F80FB00C7D8B6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		6C515142175F810E00C7D8B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		6C515144175F811100C7D8B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		6C51514C175F81D400C7D8B6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		6C51514E175F81D700C7D8B6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +126,15 @@
 		6C515109175F7D9C00C7D8B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C51514E175F81D700C7D8B6 /* icon.png */,
+				6C51514C175F81D400C7D8B6 /* icon@2x.png */,
+				6C515144175F811100C7D8B6 /* Default-568h@2x.png */,
+				6C515142175F810E00C7D8B6 /* Default@2x.png */,
+				6C515140175F80FB00C7D8B6 /* Default.png */,
 				6C51510A175F7D9C00C7D8B6 /* The Butcher-Info.plist */,
 				6C51510B175F7D9C00C7D8B6 /* InfoPlist.strings */,
 				6C51510E175F7D9C00C7D8B6 /* main.m */,
 				6C515110175F7D9C00C7D8B6 /* The Butcher-Prefix.pch */,
-				6C515114175F7D9C00C7D8B6 /* Default.png */,
-				6C515116175F7D9C00C7D8B6 /* Default@2x.png */,
-				6C515118175F7D9C00C7D8B6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,9 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C51510D175F7D9C00C7D8B6 /* InfoPlist.strings in Resources */,
-				6C515115175F7D9C00C7D8B6 /* Default.png in Resources */,
-				6C515117175F7D9C00C7D8B6 /* Default@2x.png in Resources */,
-				6C515119175F7D9C00C7D8B6 /* Default-568h@2x.png in Resources */,
+				6C515141175F80FB00C7D8B6 /* Default.png in Resources */,
+				6C515143175F810E00C7D8B6 /* Default@2x.png in Resources */,
+				6C515145175F811100C7D8B6 /* Default-568h@2x.png in Resources */,
+				6C51514D175F81D400C7D8B6 /* icon@2x.png in Resources */,
+				6C51514F175F81D700C7D8B6 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
