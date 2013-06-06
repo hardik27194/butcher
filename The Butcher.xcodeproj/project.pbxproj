@@ -13,27 +13,16 @@
 		6C51510D175F7D9C00C7D8B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C51510B175F7D9C00C7D8B6 /* InfoPlist.strings */; };
 		6C51510F175F7D9C00C7D8B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C51510E175F7D9C00C7D8B6 /* main.m */; };
 		6C515113175F7D9C00C7D8B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515112175F7D9C00C7D8B6 /* AppDelegate.m */; };
-		6C515121175F7D9D00C7D8B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515120175F7D9D00C7D8B6 /* SenTestingKit.framework */; };
-		6C515122175F7D9D00C7D8B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515102175F7D9C00C7D8B6 /* UIKit.framework */; };
-		6C515123175F7D9D00C7D8B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515104175F7D9C00C7D8B6 /* Foundation.framework */; };
-		6C51512B175F7D9D00C7D8B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C515129175F7D9D00C7D8B6 /* InfoPlist.strings */; };
-		6C51512E175F7D9D00C7D8B6 /* The_ButcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C51512D175F7D9D00C7D8B6 /* The_ButcherTests.m */; };
 		6C515141175F80FB00C7D8B6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515140175F80FB00C7D8B6 /* Default.png */; };
 		6C515143175F810E00C7D8B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515142175F810E00C7D8B6 /* Default@2x.png */; };
 		6C515145175F811100C7D8B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C515144175F811100C7D8B6 /* Default-568h@2x.png */; };
 		6C51514D175F81D400C7D8B6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C51514C175F81D400C7D8B6 /* icon@2x.png */; };
 		6C51514F175F81D700C7D8B6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C51514E175F81D700C7D8B6 /* icon.png */; };
+		6C515153175F847F00C7D8B6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515152175F847F00C7D8B6 /* MainViewController.m */; };
+		6C515156175F84E300C7D8B6 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515155175F84E300C7D8B6 /* Util.m */; };
+		6C515159175F85CA00C7D8B6 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515158175F85CA00C7D8B6 /* MainView.m */; };
+		6C515184175FE61E00C7D8B6 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 6C515183175FE61E00C7D8B6 /* img */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6C515124175F7D9D00C7D8B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C5150F7175F7D9C00C7D8B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C5150FE175F7D9C00C7D8B6;
-			remoteInfo = "The Butcher";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6C5150FF175F7D9C00C7D8B6 /* The Butcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Butcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +35,6 @@
 		6C515110175F7D9C00C7D8B6 /* The Butcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Butcher-Prefix.pch"; sourceTree = "<group>"; };
 		6C515111175F7D9C00C7D8B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C515112175F7D9C00C7D8B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6C51511F175F7D9D00C7D8B6 /* The ButcherTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The ButcherTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C515120175F7D9D00C7D8B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6C515128175F7D9D00C7D8B6 /* The ButcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The ButcherTests-Info.plist"; sourceTree = "<group>"; };
 		6C51512A175F7D9D00C7D8B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -57,6 +45,13 @@
 		6C515144175F811100C7D8B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		6C51514C175F81D400C7D8B6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 		6C51514E175F81D700C7D8B6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		6C515151175F847F00C7D8B6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6C515152175F847F00C7D8B6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6C515154175F84E300C7D8B6 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		6C515155175F84E300C7D8B6 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		6C515157175F85CA00C7D8B6 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		6C515158175F85CA00C7D8B6 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		6C515183175FE61E00C7D8B6 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C51511B175F7D9D00C7D8B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C515121175F7D9D00C7D8B6 /* SenTestingKit.framework in Frameworks */,
-				6C515122175F7D9D00C7D8B6 /* UIKit.framework in Frameworks */,
-				6C515123175F7D9D00C7D8B6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +75,7 @@
 				6C515126175F7D9D00C7D8B6 /* The ButcherTests */,
 				6C515101175F7D9C00C7D8B6 /* Frameworks */,
 				6C515100175F7D9C00C7D8B6 /* Products */,
+				6C515183175FE61E00C7D8B6 /* img */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				6C5150FF175F7D9C00C7D8B6 /* The Butcher.app */,
-				6C51511F175F7D9D00C7D8B6 /* The ButcherTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,9 +101,15 @@
 		6C515108175F7D9C00C7D8B6 /* The Butcher */ = {
 			isa = PBXGroup;
 			children = (
+				6C515109175F7D9C00C7D8B6 /* Supporting Files */,
 				6C515111175F7D9C00C7D8B6 /* AppDelegate.h */,
 				6C515112175F7D9C00C7D8B6 /* AppDelegate.m */,
-				6C515109175F7D9C00C7D8B6 /* Supporting Files */,
+				6C515151175F847F00C7D8B6 /* MainViewController.h */,
+				6C515152175F847F00C7D8B6 /* MainViewController.m */,
+				6C515157175F85CA00C7D8B6 /* MainView.h */,
+				6C515158175F85CA00C7D8B6 /* MainView.m */,
+				6C515154175F84E300C7D8B6 /* Util.h */,
+				6C515155175F84E300C7D8B6 /* Util.m */,
 			);
 			path = "The Butcher";
 			sourceTree = "<group>";
@@ -178,25 +169,6 @@
 			productReference = 6C5150FF175F7D9C00C7D8B6 /* The Butcher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6C51511E175F7D9D00C7D8B6 /* The ButcherTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C515134175F7D9D00C7D8B6 /* Build configuration list for PBXNativeTarget "The ButcherTests" */;
-			buildPhases = (
-				6C51511A175F7D9D00C7D8B6 /* Sources */,
-				6C51511B175F7D9D00C7D8B6 /* Frameworks */,
-				6C51511C175F7D9D00C7D8B6 /* Resources */,
-				6C51511D175F7D9D00C7D8B6 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6C515125175F7D9D00C7D8B6 /* PBXTargetDependency */,
-			);
-			name = "The ButcherTests";
-			productName = "The ButcherTests";
-			productReference = 6C51511F175F7D9D00C7D8B6 /* The ButcherTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,7 +191,6 @@
 			projectRoot = "";
 			targets = (
 				6C5150FE175F7D9C00C7D8B6 /* The Butcher */,
-				6C51511E175F7D9D00C7D8B6 /* The ButcherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,34 +206,11 @@
 				6C515145175F811100C7D8B6 /* Default-568h@2x.png in Resources */,
 				6C51514D175F81D400C7D8B6 /* icon@2x.png in Resources */,
 				6C51514F175F81D700C7D8B6 /* icon.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C51511C175F7D9D00C7D8B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C51512B175F7D9D00C7D8B6 /* InfoPlist.strings in Resources */,
+				6C515184175FE61E00C7D8B6 /* img in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6C51511D175F7D9D00C7D8B6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C5150FB175F7D9C00C7D8B6 /* Sources */ = {
@@ -271,26 +219,13 @@
 			files = (
 				6C51510F175F7D9C00C7D8B6 /* main.m in Sources */,
 				6C515113175F7D9C00C7D8B6 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C51511A175F7D9D00C7D8B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C51512E175F7D9D00C7D8B6 /* The_ButcherTests.m in Sources */,
+				6C515153175F847F00C7D8B6 /* MainViewController.m in Sources */,
+				6C515156175F84E300C7D8B6 /* Util.m in Sources */,
+				6C515159175F85CA00C7D8B6 /* MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6C515125175F7D9D00C7D8B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6C5150FE175F7D9C00C7D8B6 /* The Butcher */;
-			targetProxy = 6C515124175F7D9D00C7D8B6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6C51510B175F7D9C00C7D8B6 /* InfoPlist.strings */ = {
@@ -390,40 +325,6 @@
 			};
 			name = Release;
 		};
-		6C515135175F7D9D00C7D8B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The Butcher.app/The Butcher";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "The Butcher/The Butcher-Prefix.pch";
-				INFOPLIST_FILE = "The ButcherTests/The ButcherTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		6C515136175F7D9D00C7D8B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The Butcher.app/The Butcher";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "The Butcher/The Butcher-Prefix.pch";
-				INFOPLIST_FILE = "The ButcherTests/The ButcherTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -441,14 +342,6 @@
 			buildConfigurations = (
 				6C515132175F7D9D00C7D8B6 /* Debug */,
 				6C515133175F7D9D00C7D8B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		6C515134175F7D9D00C7D8B6 /* Build configuration list for PBXNativeTarget "The ButcherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C515135175F7D9D00C7D8B6 /* Debug */,
-				6C515136175F7D9D00C7D8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
