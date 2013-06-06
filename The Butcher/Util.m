@@ -28,7 +28,7 @@
 }
 
 + (id)createImageFromPNG:(NSString *)pngName InDirectory:(NSString *)dir DoYouWantImageView:(BOOL)imgView{
-    NSString *path = [[NSBundle mainBundle] pathForResource:pngName ofType:@"png" inDirectory:dir];
+    NSString *path = [[NSBundle mainBundle] pathForResource:pngName ofType:@"pn" inDirectory:dir];
     UIImage *img = [[UIImage alloc] initWithContentsOfFile:path];
     if(imgView){
         UIImageView *imgView = [[UIImageView alloc] initWithImage:img];
