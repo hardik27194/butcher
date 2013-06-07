@@ -10,9 +10,13 @@
 #import "Util.h"
 
 #import "GameView.h"
+#import "AppModel.h"
+#import "HUDViewController.h"
 
 @interface GameViewController : UIViewController
 
 @property (nonatomic, strong) GameView *v;
+@property (nonatomic, strong) AppModel *model;
+@property (nonatomic, strong) HUDViewController *HUDVC;
 
 @end

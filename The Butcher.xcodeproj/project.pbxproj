@@ -26,6 +26,10 @@
 		6C7927701761E63F0069FFC5 /* GameStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C79276F1761E63F0069FFC5 /* GameStartView.m */; };
 		6CCC8E8C17620E2100678B30 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E8B17620E2100678B30 /* GameView.m */; };
 		6CCC8E901762177800678B30 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E8F1762177800678B30 /* AppModel.m */; };
+		6CCC8E9417622CEB00678B30 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E9317622CEB00678B30 /* HUDViewController.m */; };
+		6CCC8E9717622CF800678B30 /* HUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E9617622CF800678B30 /* HUDView.m */; };
+		6CCC8E9B176235E000678B30 /* ProgressMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E9A176235E000678B30 /* ProgressMeter.m */; };
+		6CCC8E9D1762366700678B30 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCC8E9C1762366700678B30 /* QuartzCore.framework */; };
 		6CFEA9BF1760D917001F643C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFEA9BE1760D917001F643C /* InfoViewController.m */; };
 		6CFEA9C11760DA25001F643C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFEA9C01760DA25001F643C /* MapKit.framework */; };
 		6CFEA9C31760DA2B001F643C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFEA9C21760DA2B001F643C /* CoreLocation.framework */; };
@@ -68,6 +72,13 @@
 		6CCC8E8B17620E2100678B30 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		6CCC8E8E1762177800678B30 /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
 		6CCC8E8F1762177800678B30 /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		6CCC8E9217622CEB00678B30 /* HUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
+		6CCC8E9317622CEB00678B30 /* HUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
+		6CCC8E9517622CF800678B30 /* HUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDView.h; sourceTree = "<group>"; };
+		6CCC8E9617622CF800678B30 /* HUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDView.m; sourceTree = "<group>"; };
+		6CCC8E99176235E000678B30 /* ProgressMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressMeter.h; sourceTree = "<group>"; };
+		6CCC8E9A176235E000678B30 /* ProgressMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressMeter.m; sourceTree = "<group>"; };
+		6CCC8E9C1762366700678B30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6CFEA9BD1760D917001F643C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		6CFEA9BE1760D917001F643C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		6CFEA9C01760DA25001F643C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -81,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCC8E9D1762366700678B30 /* QuartzCore.framework in Frameworks */,
 				6CFEA9C31760DA2B001F643C /* CoreLocation.framework in Frameworks */,
 				6CFEA9C11760DA25001F643C /* MapKit.framework in Frameworks */,
 				6C515103175F7D9C00C7D8B6 /* UIKit.framework in Frameworks */,
@@ -114,6 +126,7 @@
 		6C515101175F7D9C00C7D8B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CCC8E9C1762366700678B30 /* QuartzCore.framework */,
 				6CFEA9C21760DA2B001F643C /* CoreLocation.framework */,
 				6CFEA9C01760DA25001F643C /* MapKit.framework */,
 				6C515102175F7D9C00C7D8B6 /* UIKit.framework */,
@@ -181,6 +194,7 @@
 		6C7927631761DE610069FFC5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6CCC8E9817622D5D00678B30 /* HUD */,
 				6C79276A1761E2360069FFC5 /* Start */,
 				6C7927671761DE840069FFC5 /* GameViewController.h */,
 				6C7927681761DE840069FFC5 /* GameViewController.m */,
@@ -206,6 +220,19 @@
 				6CCC8E8F1762177800678B30 /* AppModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6CCC8E9817622D5D00678B30 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				6CCC8E9217622CEB00678B30 /* HUDViewController.h */,
+				6CCC8E9317622CEB00678B30 /* HUDViewController.m */,
+				6CCC8E9517622CF800678B30 /* HUDView.h */,
+				6CCC8E9617622CF800678B30 /* HUDView.m */,
+				6CCC8E99176235E000678B30 /* ProgressMeter.h */,
+				6CCC8E9A176235E000678B30 /* ProgressMeter.m */,
+			);
+			name = HUD;
 			sourceTree = "<group>";
 		};
 		6CFEA9BC1760D8E7001F643C /* Info */ = {
@@ -298,6 +325,9 @@
 				6C7927701761E63F0069FFC5 /* GameStartView.m in Sources */,
 				6CCC8E8C17620E2100678B30 /* GameView.m in Sources */,
 				6CCC8E901762177800678B30 /* AppModel.m in Sources */,
+				6CCC8E9417622CEB00678B30 /* HUDViewController.m in Sources */,
+				6CCC8E9717622CF800678B30 /* HUDView.m in Sources */,
+				6CCC8E9B176235E000678B30 /* ProgressMeter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

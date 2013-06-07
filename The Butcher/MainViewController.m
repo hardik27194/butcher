@@ -67,6 +67,7 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
+
 -(void)showArrows:(id)sender{
     [UIView animateWithDuration:0.5 animations:^{
         self.MainView.screen2Arrows.alpha = 1;

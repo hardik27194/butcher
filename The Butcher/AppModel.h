@@ -10,4 +10,5 @@
 
 @interface AppModel : NSObject
 
+@property (nonatomic) int progress;
 @end
