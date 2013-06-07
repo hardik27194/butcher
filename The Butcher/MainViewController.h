@@ -9,10 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "MainView.h"
 #import "Util.h"
+#import "InfoViewController.h"
+#import "GameViewController.h"
 
 @interface MainViewController : UIViewController<UIScrollViewDelegate>
 @property (nonatomic, strong) MainView *MainView;
 
 @property (nonatomic) BOOL showingArrows;
+@property (nonatomic, strong) InfoViewController *infoVC;
+@property (nonatomic, strong) GameViewController *gameVC;
+
 
 @end

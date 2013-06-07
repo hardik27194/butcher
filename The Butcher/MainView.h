@@ -19,4 +19,7 @@
 @property (nonatomic, strong) UIImageView *screen3;
 @property (nonatomic, strong) UIImageView *screen2Arrows;
 
+
+-(void)gotoScreen3;
+
 @end

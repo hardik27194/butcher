@@ -28,7 +28,7 @@
 }
 
 + (id)createImageFromPNG:(NSString *)pngName InDirectory:(NSString *)dir DoYouWantImageView:(BOOL)imgView{
-    NSString *path = [[NSBundle mainBundle] pathForResource:pngName ofType:@"pn" inDirectory:dir];
+    NSString *path = [[NSBundle mainBundle] pathForResource:pngName ofType:@"png" inDirectory:dir];
     UIImage *img = [[UIImage alloc] initWithContentsOfFile:path];
     if(imgView){
         UIImageView *imgView = [[UIImageView alloc] initWithImage:img];
@@ -36,6 +36,15 @@
     }else{
         return img;
     }
+}
+
++ (UIButton *)createMenuButtonWithXpos:(CGFloat)x AndYpos:(CGFloat)y{
+    UIImage *btnMenuImg = [self createImageFromPNG:@"btnMenu" InDirectory:@"img" DoYouWantImageView:NO];
+    UIImage *btnMenuDownImg = [self createImageFromPNG:@"btnMenuDown" InDirectory:@"img" DoYouWantImageView:NO];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(x, y, btnMenuImg.size.width, btnMenuImg.size.height)];
+    [btn setBackgroundImage:btnMenuImg forState:UIControlStateNormal];
+    [btn setBackgroundImage:btnMenuDownImg forState:UIControlStateHighlighted];
+    return btn;
 }
 
 
