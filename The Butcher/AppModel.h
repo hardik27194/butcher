@@ -11,4 +11,6 @@
 @interface AppModel : NSObject
 
 @property (nonatomic) int progress;
+@property (nonatomic) int timeInSeconds;
+@property (nonatomic, strong) NSDictionary *gamedata;
 @end

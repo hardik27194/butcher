@@ -33,6 +33,11 @@
         
         [self.MainView.btnInfo addTarget:self action:@selector(showInfo:) forControlEvents:UIControlEventTouchUpInside];
         [self.MainView.btnMakeBurger addTarget:self action:@selector(startGame:) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        UITapGestureRecognizer *gestureRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnArrows:)];
+        gestureRecogniser.numberOfTapsRequired = 1;
+        [self.MainView.screen2Arrows addGestureRecognizer:gestureRecogniser];
     }
     return self;
 }
@@ -72,8 +77,15 @@
     [UIView animateWithDuration:0.5 animations:^{
         self.MainView.screen2Arrows.alpha = 1;
     } completion:^(BOOL finished) {
-        //
+        UITapGestureRecognizer *gestureRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnArrows:)];
+        gestureRecogniser.numberOfTapsRequired = 1;
+        [self.MainView.screen2Arrows addGestureRecognizer:gestureRecogniser];
     }];
+}
+
+-(void)handleTapOnArrows:(id)sender{
+    NSLog(@"tapped");
+    [self.MainView gotoScreen3];
 }
 
 -(void)checkIfAlreadyScrolled:(id)sender{

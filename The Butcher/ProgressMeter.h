@@ -13,5 +13,9 @@
 
 @property (nonatomic) int step;
 @property (nonatomic, strong) CAShapeLayer *cirkel;
+@property (nonatomic, strong) UILabel *lblTotalSteps;
+@property (nonatomic, strong) UILabel *lblCurrentStep;
+
+-(void)gotoStep:(int)step;
 
 @end

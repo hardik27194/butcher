@@ -14,6 +14,7 @@
 @interface HUDViewController : UIViewController
 
 @property (nonatomic, strong) HUDView *v;
+@property (nonatomic, strong) AppModel *model;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andModel:(AppModel *)model;

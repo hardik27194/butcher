@@ -19,10 +19,29 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.model  = model;
+        
         self.v = [[HUDView alloc] initWithFrame:[Util getMainScreenLandscape]];
         [self setView:self.v];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTime:) name:@"NEW_TIME" object:self.model];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStep:) name:@"NEW_STEP" object:self.model];
+        [self updateTime:nil];
+        [self updateStep:nil];
+        
+        
     }
     return self;
+}
+
+-(void)updateTime:(id)sender{
+    [self.v.timeMeter setTimeInSeconds:self.model.timeInSeconds];
+}
+
+-(void)updateStep:(id)sender{
+    [self.v.progressMeter gotoStep:self.model.progress];
+    NSString *gametext = [[[self.model.gamedata objectForKey:@"minigames"] objectAtIndex:self.model.progress] objectForKey:@"desc"];
+    self.v.lblGameInfo.text = [NSString stringWithFormat:@"%d. %@",self.model.progress, [gametext uppercaseString]];
 }
 
 - (void)viewDidLoad
