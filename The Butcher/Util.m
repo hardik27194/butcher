@@ -47,6 +47,12 @@
     return btn;
 }
 
++(CGFloat)radiansFromDegrees:(float)deg{
+    return (CGFloat)((deg) / 180.0 * M_PI);
+}
+
+
+
 
 
 @end

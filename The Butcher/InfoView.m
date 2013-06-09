@@ -24,7 +24,7 @@
         self.elemsHidden = NO;
         
         
-        self.btnMenu = [Util createMenuButtonWithXpos:40 AndYpos:7];
+        self.btnMenu = [Util createMenuButtonWithXpos:30 AndYpos:7];
         [self addSubview:self.btnMenu];
         
         self.sidebar = [Util createImageFromPNG:@"sidebar" InDirectory:@"img/info" DoYouWantImageView:YES];

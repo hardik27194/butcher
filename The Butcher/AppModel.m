@@ -19,7 +19,6 @@
     NSString *gamedataPath = [[NSBundle mainBundle] pathForResource:@"gameData" ofType:@"plist"];
     self.gamedata = [NSDictionary dictionaryWithContentsOfFile:gamedataPath];
     
-    NSLog(@"%@",self.gamedata);
     return self;
 }
 

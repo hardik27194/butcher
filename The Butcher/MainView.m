@@ -34,8 +34,7 @@
         self.screen2 = [Util createImageFromPNG:@"home_screen2" InDirectory:@"img/home" DoYouWantImageView:YES];
         self.screen2.frame = CGRectMake((frame.size.width/2) - (self.screen2.frame.size.width/2), 339, self.screen2.frame.size.width, self.screen2.frame.size.height);
         self.screen2.alpha = 0;
-        [self addSubview:self.screen2];
-        
+        [self addSubview:self.screen2];        
         
         self.screen2Arrows = [Util createImageFromPNG:@"home_showmoreArrows" InDirectory:@"img/home" DoYouWantImageView:YES];
         self.screen2Arrows.frame = CGRectMake((frame.size.width/2) - (self.screen2Arrows.frame.size.width/2), 606, self.screen2Arrows.frame.size.width, self.screen2Arrows.frame.size.height);

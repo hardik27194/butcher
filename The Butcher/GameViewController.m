@@ -39,6 +39,9 @@
             self.HUDVC = [[HUDViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
             [self.v addSubview:self.HUDVC.v];
             [self.HUDVC.v.btnMenu addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
+            
+            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.ChooseMeatVC.v];
             break;
             
         default:

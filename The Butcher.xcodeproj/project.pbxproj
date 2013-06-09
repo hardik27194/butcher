@@ -33,6 +33,8 @@
 		6CCC8E9F17635F5800678B30 /* Franchise-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CCC8E9E17635F5800678B30 /* Franchise-Bold.ttf */; };
 		6CCC8EA2176366DE00678B30 /* TimeMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8EA1176366DE00678B30 /* TimeMeter.m */; };
 		6CCC8EA4176388D200678B30 /* gameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCC8EA3176388D200678B30 /* gameData.plist */; };
+		6CCC8EAB1764BDDC00678B30 /* ChooseMeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8EAA1764BDDC00678B30 /* ChooseMeatView.m */; };
+		6CCC8EAE1764BDFF00678B30 /* ChooseMeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8EAD1764BDFF00678B30 /* ChooseMeatViewController.m */; };
 		6CFEA9BF1760D917001F643C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFEA9BE1760D917001F643C /* InfoViewController.m */; };
 		6CFEA9C11760DA25001F643C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFEA9C01760DA25001F643C /* MapKit.framework */; };
 		6CFEA9C31760DA2B001F643C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFEA9C21760DA2B001F643C /* CoreLocation.framework */; };
@@ -86,6 +88,10 @@
 		6CCC8EA0176366DE00678B30 /* TimeMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeMeter.h; sourceTree = "<group>"; };
 		6CCC8EA1176366DE00678B30 /* TimeMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeMeter.m; sourceTree = "<group>"; };
 		6CCC8EA3176388D200678B30 /* gameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gameData.plist; sourceTree = "<group>"; };
+		6CCC8EA91764BDDC00678B30 /* ChooseMeatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseMeatView.h; sourceTree = "<group>"; };
+		6CCC8EAA1764BDDC00678B30 /* ChooseMeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseMeatView.m; sourceTree = "<group>"; };
+		6CCC8EAC1764BDFF00678B30 /* ChooseMeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseMeatViewController.h; sourceTree = "<group>"; };
+		6CCC8EAD1764BDFF00678B30 /* ChooseMeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseMeatViewController.m; sourceTree = "<group>"; };
 		6CFEA9BD1760D917001F643C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		6CFEA9BE1760D917001F643C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		6CFEA9C01760DA25001F643C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -147,6 +153,8 @@
 		6C515108175F7D9C00C7D8B6 /* The Butcher */ = {
 			isa = PBXGroup;
 			children = (
+				6C515154175F84E300C7D8B6 /* Util.h */,
+				6C515155175F84E300C7D8B6 /* Util.m */,
 				6CCC8E8D1762176A00678B30 /* Model */,
 				6C7927631761DE610069FFC5 /* Game */,
 				6CFEA9BC1760D8E7001F643C /* Info */,
@@ -156,8 +164,6 @@
 				6C515152175F847F00C7D8B6 /* MainViewController.m */,
 				6C515157175F85CA00C7D8B6 /* MainView.h */,
 				6C515158175F85CA00C7D8B6 /* MainView.m */,
-				6C515154175F84E300C7D8B6 /* Util.h */,
-				6C515155175F84E300C7D8B6 /* Util.m */,
 				6C515109175F7D9C00C7D8B6 /* Supporting Files */,
 			);
 			path = "The Butcher";
@@ -202,6 +208,7 @@
 		6C7927631761DE610069FFC5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6CCC8EA51764BDA000678B30 /* game1: Choose meat */,
 				6CCC8E9817622D5D00678B30 /* HUD */,
 				6C79276A1761E2360069FFC5 /* Start */,
 				6C7927671761DE840069FFC5 /* GameViewController.h */,
@@ -244,6 +251,17 @@
 				6CCC8EA1176366DE00678B30 /* TimeMeter.m */,
 			);
 			name = HUD;
+			sourceTree = "<group>";
+		};
+		6CCC8EA51764BDA000678B30 /* game1: Choose meat */ = {
+			isa = PBXGroup;
+			children = (
+				6CCC8EAC1764BDFF00678B30 /* ChooseMeatViewController.h */,
+				6CCC8EAD1764BDFF00678B30 /* ChooseMeatViewController.m */,
+				6CCC8EA91764BDDC00678B30 /* ChooseMeatView.h */,
+				6CCC8EAA1764BDDC00678B30 /* ChooseMeatView.m */,
+			);
+			name = "game1: Choose meat";
 			sourceTree = "<group>";
 		};
 		6CFEA9BC1760D8E7001F643C /* Info */ = {
@@ -342,6 +360,8 @@
 				6CCC8E9717622CF800678B30 /* HUDView.m in Sources */,
 				6CCC8E9B176235E000678B30 /* ProgressMeter.m in Sources */,
 				6CCC8EA2176366DE00678B30 /* TimeMeter.m in Sources */,
+				6CCC8EAB1764BDDC00678B30 /* ChooseMeatView.m in Sources */,
+				6CCC8EAE1764BDFF00678B30 /* ChooseMeatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

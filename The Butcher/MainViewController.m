@@ -66,6 +66,10 @@
         self.MainView.btnInfo.alpha = (self.MainView.contentOffset.y -540)/100;
         self.MainView.btnVote.alpha = (self.MainView.contentOffset.y -540)/100;
     }
+    if(self.MainView.contentOffset.y >= 580){
+        self.MainView.screen3.alpha = 1;
+        self.MainView.btnMakeBurger.alpha = 1;
+    }
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"alreadyScrolled"] && self.MainView.contentOffset.y > 500){
         NSLog(@"syncing");
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"alreadyScrolled"];
