@@ -44,6 +44,10 @@
             [self.HUDVC.v.btnMenu addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(overlayDismissedHandler:) name:@"OVERLAY_DISMISSED" object:self.HUDVC.v];
             
+            //skipping the first game + also disabled overlay in HUDView
+            self.model.meatID = 2;
+            self.model.timeInSeconds = 123;
+            self.model.progress = 2;
 
             break;
             
@@ -51,7 +55,15 @@
             [self.ChooseMeatVC.v removeFromSuperview];
             self.ChooseMeatVC = nil;
             
-            //TODO: GAME 2;
+            self.HakkenVC = [[HakkenViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.HakkenVC.v];
+            break;
+            
+        case 3:
+            [self.HakkenVC.v removeFromSuperview];
+            //self.HakkenVC = nil;
+            NSLog(@"game3");
+            //game 3
             break;
             
         default:

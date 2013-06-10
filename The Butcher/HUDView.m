@@ -25,7 +25,7 @@
         self.btnMenu = [Util createMenuButtonWithXpos:25 AndYpos:275];
         [self addSubview:self.btnMenu];
         
-        self.lblGameInfo = [[UILabel alloc] initWithFrame:CGRectMake(115, 280, frame.size.width - 230, 25)];
+        self.lblGameInfo = [[UILabel alloc] initWithFrame:CGRectMake(115, 280, frame.size.width - 220, 25)];
         self.lblGameInfo.backgroundColor = [UIColor clearColor];
         self.lblGameInfo.textAlignment = NSTextAlignmentCenter;
         self.lblGameInfo.font = [UIFont fontWithName:@"Franchise" size:23];
@@ -35,7 +35,8 @@
         self.btnOverlay = [[UIButton alloc] initWithFrame:CGRectMake((frame.size.width/2) - (btnOverlayImg.size.width/2), 0, btnOverlayImg.size.width, btnOverlayImg.size.height)];
         [self.btnOverlay setBackgroundImage:btnOverlayImg forState:UIControlStateNormal];
         [self.btnOverlay setBackgroundImage:btnOverlayImg forState:UIControlStateHighlighted];
-        [self addSubview:self.btnOverlay];
+        //for skipping the game
+        //[self addSubview:self.btnOverlay];
         [self.btnOverlay addTarget:self action:@selector(removeOverlay:) forControlEvents:UIControlEventTouchUpInside];
 
     }

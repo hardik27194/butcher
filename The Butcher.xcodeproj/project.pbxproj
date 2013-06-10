@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C2C8F71176618E700DC193D /* HakkenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C8F70176618E700DC193D /* HakkenViewController.m */; };
+		6C2C8F771766199B00DC193D /* HakkenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C8F761766199B00DC193D /* HakkenView.m */; };
+		6C2C8F791766343A00DC193D /* chop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6C2C8F781766343A00DC193D /* chop.m4a */; };
 		6C515103175F7D9C00C7D8B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515102175F7D9C00C7D8B6 /* UIKit.framework */; };
 		6C515105175F7D9C00C7D8B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515104175F7D9C00C7D8B6 /* Foundation.framework */; };
 		6C515107175F7D9C00C7D8B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C515106175F7D9C00C7D8B6 /* CoreGraphics.framework */; };
@@ -44,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C2C8F6F176618E700DC193D /* HakkenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HakkenViewController.h; sourceTree = "<group>"; };
+		6C2C8F70176618E700DC193D /* HakkenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HakkenViewController.m; sourceTree = "<group>"; };
+		6C2C8F751766199B00DC193D /* HakkenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HakkenView.h; sourceTree = "<group>"; };
+		6C2C8F761766199B00DC193D /* HakkenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HakkenView.m; sourceTree = "<group>"; };
+		6C2C8F781766343A00DC193D /* chop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = chop.m4a; sourceTree = "<group>"; };
 		6C5150FF175F7D9C00C7D8B6 /* The Butcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Butcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C515102175F7D9C00C7D8B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6C515104175F7D9C00C7D8B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +130,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C2C8F6E1766187A00DC193D /* game2: Hakken */ = {
+			isa = PBXGroup;
+			children = (
+				6C2C8F6F176618E700DC193D /* HakkenViewController.h */,
+				6C2C8F70176618E700DC193D /* HakkenViewController.m */,
+				6C2C8F751766199B00DC193D /* HakkenView.h */,
+				6C2C8F761766199B00DC193D /* HakkenView.m */,
+			);
+			name = "game2: Hakken";
+			sourceTree = "<group>";
+		};
 		6C5150F6175F7D9C00C7D8B6 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +197,7 @@
 		6C515109175F7D9C00C7D8B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C2C8F781766343A00DC193D /* chop.m4a */,
 				6CCC8EB5176552B500678B30 /* LinLibertine_R.ttf */,
 				6CCC8E9E17635F5800678B30 /* Franchise-Bold.ttf */,
 				6C51514E175F81D700C7D8B6 /* icon.png */,
@@ -215,6 +235,7 @@
 		6C7927631761DE610069FFC5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6C2C8F6E1766187A00DC193D /* game2: Hakken */,
 				6CCC8EA51764BDA000678B30 /* game1: Choose meat */,
 				6CCC8E9817622D5D00678B30 /* HUD */,
 				6C79276A1761E2360069FFC5 /* Start */,
@@ -343,6 +364,7 @@
 				6CCC8E9F17635F5800678B30 /* Franchise-Bold.ttf in Resources */,
 				6CCC8EA4176388D200678B30 /* gameData.plist in Resources */,
 				6CCC8EB6176552B500678B30 /* LinLibertine_R.ttf in Resources */,
+				6C2C8F791766343A00DC193D /* chop.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +392,8 @@
 				6CCC8EA2176366DE00678B30 /* TimeMeter.m in Sources */,
 				6CCC8EAB1764BDDC00678B30 /* ChooseMeatView.m in Sources */,
 				6CCC8EAE1764BDFF00678B30 /* ChooseMeatViewController.m in Sources */,
+				6C2C8F71176618E700DC193D /* HakkenViewController.m in Sources */,
+				6C2C8F771766199B00DC193D /* HakkenView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
