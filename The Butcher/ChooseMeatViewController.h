@@ -16,6 +16,9 @@
 @property (nonatomic, strong) AppModel *model;
 @property (nonatomic, strong) ChooseMeatView *v;
 
+@property (nonatomic) BOOL showingOverlay;
+@property (nonatomic) CGRect previousFrame;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andModel:(AppModel *)model;

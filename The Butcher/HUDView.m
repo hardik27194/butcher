@@ -47,6 +47,7 @@
         self.btnOverlay.alpha = 0;
     } completion:^(BOOL finished) {
         self.btnOverlay = nil;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"OVERLAY_DISMISSED" object:self];
     }];
 }
 

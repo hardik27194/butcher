@@ -27,6 +27,13 @@
     return landscape;
 }
 
++(CGRect)getGameFrame{
+    CGRect frame = [self getMainScreenLandscape];
+    frame.size.height = frame.size.height - 35;
+    
+    return frame;
+}
+
 + (id)createImageFromPNG:(NSString *)pngName InDirectory:(NSString *)dir DoYouWantImageView:(BOOL)imgView{
     NSString *path = [[NSBundle mainBundle] pathForResource:pngName ofType:@"png" inDirectory:dir];
     UIImage *img = [[UIImage alloc] initWithContentsOfFile:path];

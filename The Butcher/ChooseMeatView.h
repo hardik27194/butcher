@@ -19,6 +19,9 @@
 @property (nonatomic, strong) UIButton *btnMeat5;
 @property (nonatomic, strong) UIButton *btnMeat6;
 
+@property (nonatomic, strong) UILabel *lblMeatInfo;
+@property (nonatomic, strong) UIButton *btnChoose;
+
 
 
 

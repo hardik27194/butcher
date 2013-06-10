@@ -6,9 +6,39 @@
 	<array>
 		<dict>
 			<key>desc</key>
-			<string></string>
+			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
 			<key>name</key>
 			<string>rib</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<key>name</key>
+			<string>Short Loin</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<key>name</key>
+			<string>Sirloan</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<key>name</key>
+			<string>Fore Shank</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<key>name</key>
+			<string>Short Plate</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<key>name</key>
+			<string>Flank</string>
 		</dict>
 	</array>
 	<key>minigames</key>
@@ -16,6 +46,22 @@
 		<dict>
 			<key>desc</key>
 			<string>Starting the game...</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>Cut your favorite slice</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>Pop it like it&apos;s hot!</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>Cut your favorite slice</string>
+		</dict>
+		<dict>
+			<key>desc</key>
+			<string>Cut your favorite slice</string>
 		</dict>
 		<dict>
 			<key>desc</key>

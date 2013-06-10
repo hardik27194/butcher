@@ -36,12 +36,22 @@
             [self.v.gameStartV removeFromSuperview];
             self.v.gameStartV = nil;
             
+            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.ChooseMeatVC.v];
+            
             self.HUDVC = [[HUDViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
             [self.v addSubview:self.HUDVC.v];
             [self.HUDVC.v.btnMenu addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(overlayDismissedHandler:) name:@"OVERLAY_DISMISSED" object:self.HUDVC.v];
             
-            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
-            [self.v addSubview:self.ChooseMeatVC.v];
+
+            break;
+            
+        case 2:
+            [self.ChooseMeatVC.v removeFromSuperview];
+            self.ChooseMeatVC = nil;
+            
+            //GAME 2;
             break;
             
         default:
@@ -49,6 +59,10 @@
     }
 }
 
+-(void)overlayDismissedHandler:(id)sender{
+    [self.ChooseMeatVC.v removeFromSuperview];
+    [self.v addSubview:self.ChooseMeatVC.v];
+}
 
 -(void)nextStep:(id)sender{
     self.model.progress++;

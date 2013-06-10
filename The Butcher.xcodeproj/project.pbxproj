@@ -35,6 +35,8 @@
 		6CCC8EA4176388D200678B30 /* gameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCC8EA3176388D200678B30 /* gameData.plist */; };
 		6CCC8EAB1764BDDC00678B30 /* ChooseMeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8EAA1764BDDC00678B30 /* ChooseMeatView.m */; };
 		6CCC8EAE1764BDFF00678B30 /* ChooseMeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8EAD1764BDFF00678B30 /* ChooseMeatViewController.m */; };
+		6CCC8EB21764FBC300678B30 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCC8EB11764FBC300678B30 /* AVFoundation.framework */; };
+		6CCC8EB6176552B500678B30 /* LinLibertine_R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CCC8EB5176552B500678B30 /* LinLibertine_R.ttf */; };
 		6CFEA9BF1760D917001F643C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFEA9BE1760D917001F643C /* InfoViewController.m */; };
 		6CFEA9C11760DA25001F643C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFEA9C01760DA25001F643C /* MapKit.framework */; };
 		6CFEA9C31760DA2B001F643C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFEA9C21760DA2B001F643C /* CoreLocation.framework */; };
@@ -92,6 +94,8 @@
 		6CCC8EAA1764BDDC00678B30 /* ChooseMeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseMeatView.m; sourceTree = "<group>"; };
 		6CCC8EAC1764BDFF00678B30 /* ChooseMeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseMeatViewController.h; sourceTree = "<group>"; };
 		6CCC8EAD1764BDFF00678B30 /* ChooseMeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseMeatViewController.m; sourceTree = "<group>"; };
+		6CCC8EB11764FBC300678B30 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6CCC8EB5176552B500678B30 /* LinLibertine_R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LinLibertine_R.ttf; sourceTree = "<group>"; };
 		6CFEA9BD1760D917001F643C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		6CFEA9BE1760D917001F643C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		6CFEA9C01760DA25001F643C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -105,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCC8EB21764FBC300678B30 /* AVFoundation.framework in Frameworks */,
 				6CCC8E9D1762366700678B30 /* QuartzCore.framework in Frameworks */,
 				6CFEA9C31760DA2B001F643C /* CoreLocation.framework in Frameworks */,
 				6CFEA9C11760DA25001F643C /* MapKit.framework in Frameworks */,
@@ -139,6 +144,7 @@
 		6C515101175F7D9C00C7D8B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CCC8EB11764FBC300678B30 /* AVFoundation.framework */,
 				6CCC8E9C1762366700678B30 /* QuartzCore.framework */,
 				6CFEA9C21760DA2B001F643C /* CoreLocation.framework */,
 				6CFEA9C01760DA25001F643C /* MapKit.framework */,
@@ -172,6 +178,7 @@
 		6C515109175F7D9C00C7D8B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6CCC8EB5176552B500678B30 /* LinLibertine_R.ttf */,
 				6CCC8E9E17635F5800678B30 /* Franchise-Bold.ttf */,
 				6C51514E175F81D700C7D8B6 /* icon.png */,
 				6C51514C175F81D400C7D8B6 /* icon@2x.png */,
@@ -335,6 +342,7 @@
 				6C515184175FE61E00C7D8B6 /* img in Resources */,
 				6CCC8E9F17635F5800678B30 /* Franchise-Bold.ttf in Resources */,
 				6CCC8EA4176388D200678B30 /* gameData.plist in Resources */,
+				6CCC8EB6176552B500678B30 /* LinLibertine_R.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

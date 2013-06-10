@@ -12,5 +12,6 @@
 
 @property (nonatomic) int progress;
 @property (nonatomic) int timeInSeconds;
+@property (nonatomic) int meatID;
 @property (nonatomic, strong) NSDictionary *gamedata;
 @end

@@ -12,6 +12,7 @@
 
 
 + (CGRect)getMainScreenLandscape;
++(CGRect)getGameFrame;
 + (id)createImageFromPNG:(NSString *)pngName InDirectory:(NSString *)dir DoYouWantImageView:(BOOL)imgView;
 + (UIButton *)createMenuButtonWithXpos:(CGFloat)x AndYpos:(CGFloat)y;
 
