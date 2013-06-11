@@ -17,7 +17,7 @@
         // Initialization code
         self.backgroundColor = [UIColor clearColor];
         
-        self.slider = [[UISlider alloc] initWithFrame:CGRectMake((frame.size.width/2) - (105/2), 30, 105, 10)];
+        self.slider = [[UISlider alloc] initWithFrame:CGRectMake((frame.size.width/2) - (105/2), 25, 105, 10)];
         UIImage *trackImg = [Util createImageFromPNG:@"sliderTrack" InDirectory:@"img/game/2" DoYouWantImageView:NO];
         UIImage *thumbImg = [Util createImageFromPNG:@"sliderThumb" InDirectory:@"img/game/2" DoYouWantImageView:NO];
         [self.slider setMaximumTrackImage:trackImg forState:UIControlStateNormal];
@@ -26,6 +26,7 @@
         self.slider.maximumValue = 20;
         [self.slider setThumbImage:thumbImg forState:UIControlStateNormal];
         [self.slider setThumbImage:thumbImg forState:UIControlStateHighlighted];
+        self.slider.userInteractionEnabled = NO;
         [self addSubview:self.slider];
         
         self.lblMeat = [[UILabel alloc] initWithFrame:CGRectMake(self.slider.frame.origin.x - 105, self.slider.frame.origin.y +5, 100, 10)];
@@ -38,7 +39,7 @@
         [self addSubview:self.lblMeat];
         
         self.cleaver = [Util createImageFromPNG:@"cleaver0" InDirectory:@"img/game/2" DoYouWantImageView:YES];
-        self.cleaver.frame = CGRectMake((frame.size.width/2) - (self.cleaver.frame.size.width/2), 90, self.cleaver.frame.size.width, self.cleaver.frame.size.height);
+        self.cleaver.frame = CGRectMake((frame.size.width/2) - (self.cleaver.frame.size.width/2), 70, self.cleaver.frame.size.width, self.cleaver.frame.size.height);
         self.cleaver.transform = CGAffineTransformScale(self.cleaver.transform, -1, 1);
         [self addSubview:self.cleaver];
         
@@ -49,7 +50,7 @@
         [self.overlay setBackgroundImage:overlayImg forState:UIControlStateHighlighted];
         self.overlay.alpha = 0;
         [self addSubview:self.overlay];
-        [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [UIView animateWithDuration:0.5 delay:0.4 options:UIViewAnimationOptionCurveEaseIn animations:^{
             self.overlay.alpha = 1;
         } completion:nil];
     }

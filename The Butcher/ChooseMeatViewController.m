@@ -80,10 +80,18 @@
                                    btnMeat.frame.size.height);
         self.v.lblMeatInfo.alpha = 1;
         self.v.btnChoose.alpha = 1;
+    } completion:^(BOOL finished) {
+
+        self.v.label.transform = CGAffineTransformConcat(CGAffineTransformMakeScale(1.5, 1.5), CGAffineTransformMakeRotation(0.3));
+        [UIView animateWithDuration:0.3 animations:^{
+            self.v.label.transform = CGAffineTransformConcat(CGAffineTransformMakeScale(1, 1), CGAffineTransformMakeRotation(0));
+
+            self.v.label.alpha = 1;
+        }];
     }];
     
     self.v.lblMeatInfo.frame = CGRectMake(self.v.lblMeatInfo.frame.origin.x,
-                                          btnMeat.frame.origin.y + 10 + btnMeat.frame.size.height,
+                                          btnMeat.frame.origin.y + 4 + btnMeat.frame.size.height,
                                           self.v.lblMeatInfo.frame.size.width,
                                           self.v.lblMeatInfo.frame.size.height);
 }
@@ -94,6 +102,7 @@
         btnMeat.frame = self.previousFrame;
         self.v.lblMeatInfo.alpha = 0;
         self.v.btnChoose.alpha = 0;
+        self.v.label.alpha = 0;
     } completion:^(BOOL finished) {
         [self.v.lblMeatInfo removeFromSuperview];
         [self.v.btnChoose removeFromSuperview];

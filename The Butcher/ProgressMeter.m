@@ -34,7 +34,7 @@
         CGPathRef path = bezPath.CGPath;
         
         self.cirkel.path = path;
-        self.cirkel.strokeColor = [UIColor blackColor].CGColor;
+        self.cirkel.strokeColor = [UIColor whiteColor].CGColor;
         self.cirkel.fillColor = [UIColor clearColor].CGColor;
         self.cirkel.lineWidth = 2;
         self.cirkel.lineCap = kCALineCapSquare;
@@ -50,7 +50,7 @@
         [lijnpath moveToPoint:CGPointMake(10, 30)];
         [lijnpath addLineToPoint:CGPointMake(30, 10)];
         lijn.path = lijnpath.CGPath;
-        lijn.strokeColor = [UIColor blackColor].CGColor;
+        lijn.strokeColor = [UIColor whiteColor].CGColor;
         lijn.lineWidth = 2;
         [self.layer addSublayer:lijn];
         
@@ -58,12 +58,14 @@
         self.lblTotalSteps = [[UILabel alloc] initWithFrame:CGRectMake(23, 19, 20, 20)];
         self.lblTotalSteps.backgroundColor = [UIColor clearColor];
         self.lblTotalSteps.font = [UIFont fontWithName:@"Franchise" size:19];
+        self.lblTotalSteps.textColor = [UIColor whiteColor];
         self.lblTotalSteps.text = @"5";
         [self addSubview:self.lblTotalSteps];
         
         self.lblCurrentStep = [[UILabel alloc] initWithFrame:CGRectMake(11, 5, 20, 20)];
         self.lblCurrentStep.backgroundColor = [UIColor clearColor];
         self.lblCurrentStep.font = [UIFont fontWithName:@"Franchise" size:19];
+        self.lblCurrentStep.textColor = [UIColor whiteColor];
         [self addSubview:self.lblCurrentStep];
         
     }

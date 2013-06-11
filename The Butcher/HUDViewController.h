@@ -16,6 +16,8 @@
 @property (nonatomic, strong) HUDView *v;
 @property (nonatomic, strong) AppModel *model;
 
+@property (nonatomic) BOOL showing;
+@property (nonatomic) float previousY;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andModel:(AppModel *)model;
 

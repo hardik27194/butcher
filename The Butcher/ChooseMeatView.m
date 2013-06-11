@@ -18,7 +18,7 @@
         self.backgroundColor = [UIColor clearColor];
         
         UIImageView *silhouette = [Util createImageFromPNG:@"silhouette" InDirectory:@"img/game/1" DoYouWantImageView:YES];
-        silhouette.frame = CGRectMake((frame.size.width/2) - (silhouette.frame.size.width/2) -30, 55, silhouette.frame.size.width, silhouette.frame.size.height);
+        silhouette.frame = CGRectMake((frame.size.width/2) - (silhouette.frame.size.width/2) -30, 25, silhouette.frame.size.width, silhouette.frame.size.height);
         [self addSubview:silhouette];
         
         UIImage *btnMeat1Img = [Util createImageFromPNG:@"meat1" InDirectory:@"img/game/1" DoYouWantImageView:NO];
@@ -57,7 +57,7 @@
         self.btnMeat6.titleLabel.text = @"6";
         [self addSubview:self.btnMeat6];
         
-        self.lblMeatInfo = [[UILabel alloc] initWithFrame:CGRectMake((frame.size.width/2) - (250/2), 50, 250, 100)];
+        self.lblMeatInfo = [[UILabel alloc] initWithFrame:CGRectMake((frame.size.width/2) - (350/2), 50, 350, 80)];
         self.lblMeatInfo.backgroundColor = [UIColor clearColor];
         self.lblMeatInfo.font = [UIFont fontWithName:@"LinLibertine" size:20];
         self.lblMeatInfo.lineBreakMode = NSLineBreakByWordWrapping;
@@ -66,9 +66,14 @@
         self.lblMeatInfo.alpha = 0;
         
         UIImage *btnChooseImg = [Util createImageFromPNG:@"btnChoose" InDirectory:@"img/game/1" DoYouWantImageView:NO];
-        self.btnChoose = [[UIButton alloc] initWithFrame:CGRectMake((frame.size.width/2)-(btnChooseImg.size.width/2), 235, btnChooseImg.size.width, btnChooseImg.size.height)];
+        self.btnChoose = [[UIButton alloc] initWithFrame:CGRectMake((frame.size.width/2)-(btnChooseImg.size.width/2), 215, btnChooseImg.size.width, btnChooseImg.size.height)];
         [self.btnChoose setBackgroundImage:btnChooseImg forState:UIControlStateNormal];
         self.btnChoose.alpha = 0;
+        
+        self.label = [Util createImageFromPNG:@"label" InDirectory:@"img/game/1" DoYouWantImageView:YES];
+        self.label.frame = CGRectMake(190, 10, self.label.frame.size.width, self.label.frame.size.height);
+        self.label.alpha = 0;
+        [self addSubview:self.label];
     }
     return self;
 }

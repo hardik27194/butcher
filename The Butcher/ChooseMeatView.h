@@ -22,6 +22,8 @@
 @property (nonatomic, strong) UILabel *lblMeatInfo;
 @property (nonatomic, strong) UIButton *btnChoose;
 
+@property (nonatomic, strong) UIImageView *label;
+
 
 
 

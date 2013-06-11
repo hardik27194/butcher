@@ -32,7 +32,7 @@
         CGPathRef path = bezPath.CGPath;
         
         self.cirkel.path = path;
-        self.cirkel.strokeColor = [UIColor blackColor].CGColor;
+        self.cirkel.strokeColor = [UIColor whiteColor].CGColor;
         self.cirkel.fillColor = [UIColor clearColor].CGColor;
         self.cirkel.lineWidth = 2;
         self.cirkel.lineCap = kCALineCapSquare;
@@ -47,6 +47,8 @@
         self.lblTime.font = [UIFont fontWithName:@"Franchise" size:20];
         self.lblTime.textAlignment = NSTextAlignmentCenter;
         self.lblTime.backgroundColor = [UIColor clearColor];
+        self.lblTime.textColor = [UIColor whiteColor];
+        
 
         [self addSubview:self.lblTime];
     }

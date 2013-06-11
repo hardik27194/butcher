@@ -65,7 +65,7 @@
 
 -(void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration{
     
-    if (acceleration.x < -2.02 && self.started) {
+    if (acceleration.x < -1.95 && self.started) {
         self.hits++;
     }
 }
@@ -95,7 +95,10 @@
         case 20:
             [self.timer invalidate];
             self.timer = nil;
+            [[UIAccelerometer sharedAccelerometer] setDelegate:nil];
             self.started = NO;
+            [self.chopSound stop];
+            self.chopSound = nil;
             self.model.progress = 3;
             break;
             
