@@ -47,7 +47,8 @@
             
             self.model.timeInSeconds = 123;
             self.model.meatID = 2;
-            self.model.progress = 3;
+            self.model.bakwijze =3;
+            self.model.progress = 5;
             
             break;
             
@@ -73,9 +74,23 @@
             [self.BakkenVC.v removeFromSuperview];
             self.BakkenVC = nil;
             
-            NSLog(@"game4 toevoegen");
             break;
             
+        case 5:
+            
+            self.SausenVC = [[SausenViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.SausenVC.v];
+            
+            break;
+            
+        case 6:
+            [self.HUDVC.v removeFromSuperview];
+            self.HUDVC = nil;
+            
+            [self.SausenVC.v removeFromSuperview];
+            [self.SausenVC.kleurV removeFromSuperview];
+            self.SausenVC = nil;
+            break;
         default:
             break;
     }

@@ -27,6 +27,10 @@
 		6C515184175FE61E00C7D8B6 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 6C515183175FE61E00C7D8B6 /* img */; };
 		6C7696D31768BB07000A7BDC /* BakkenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D21768BB07000A7BDC /* BakkenView.m */; };
 		6C7696D61768BB39000A7BDC /* BakkenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D51768BB39000A7BDC /* BakkenViewController.m */; };
+		6C7696DA1769C673000A7BDC /* SausenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D91769C673000A7BDC /* SausenViewController.m */; };
+		6C7696DD1769C67F000A7BDC /* SausenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696DC1769C67F000A7BDC /* SausenView.m */; };
+		6C7696E01769C6C0000A7BDC /* Sausenpicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696DF1769C6C0000A7BDC /* Sausenpicker.m */; };
+		6C7696E6176A1CEB000A7BDC /* SausKleurenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696E5176A1CEB000A7BDC /* SausKleurenView.m */; };
 		6C7927691761DE840069FFC5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7927681761DE840069FFC5 /* GameViewController.m */; };
 		6C7927701761E63F0069FFC5 /* GameStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C79276F1761E63F0069FFC5 /* GameStartView.m */; };
 		6CCC8E8C17620E2100678B30 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E8B17620E2100678B30 /* GameView.m */; };
@@ -85,6 +89,14 @@
 		6C7696D21768BB07000A7BDC /* BakkenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakkenView.m; sourceTree = "<group>"; };
 		6C7696D41768BB39000A7BDC /* BakkenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakkenViewController.h; sourceTree = "<group>"; };
 		6C7696D51768BB39000A7BDC /* BakkenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakkenViewController.m; sourceTree = "<group>"; };
+		6C7696D81769C673000A7BDC /* SausenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SausenViewController.h; sourceTree = "<group>"; };
+		6C7696D91769C673000A7BDC /* SausenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SausenViewController.m; sourceTree = "<group>"; };
+		6C7696DB1769C67F000A7BDC /* SausenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SausenView.h; sourceTree = "<group>"; };
+		6C7696DC1769C67F000A7BDC /* SausenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SausenView.m; sourceTree = "<group>"; };
+		6C7696DE1769C6C0000A7BDC /* Sausenpicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sausenpicker.h; sourceTree = "<group>"; };
+		6C7696DF1769C6C0000A7BDC /* Sausenpicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sausenpicker.m; sourceTree = "<group>"; };
+		6C7696E4176A1CEB000A7BDC /* SausKleurenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SausKleurenView.h; sourceTree = "<group>"; };
+		6C7696E5176A1CEB000A7BDC /* SausKleurenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SausKleurenView.m; sourceTree = "<group>"; };
 		6C7927671761DE840069FFC5 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		6C7927681761DE840069FFC5 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		6C79276E1761E63F0069FFC5 /* GameStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartView.h; sourceTree = "<group>"; };
@@ -249,9 +261,25 @@
 			name = "game3: Bakken";
 			sourceTree = "<group>";
 		};
+		6C7696D71769C661000A7BDC /* game5: Sausen */ = {
+			isa = PBXGroup;
+			children = (
+				6C7696D81769C673000A7BDC /* SausenViewController.h */,
+				6C7696D91769C673000A7BDC /* SausenViewController.m */,
+				6C7696DB1769C67F000A7BDC /* SausenView.h */,
+				6C7696DC1769C67F000A7BDC /* SausenView.m */,
+				6C7696DE1769C6C0000A7BDC /* Sausenpicker.h */,
+				6C7696DF1769C6C0000A7BDC /* Sausenpicker.m */,
+				6C7696E4176A1CEB000A7BDC /* SausKleurenView.h */,
+				6C7696E5176A1CEB000A7BDC /* SausKleurenView.m */,
+			);
+			name = "game5: Sausen";
+			sourceTree = "<group>";
+		};
 		6C7927631761DE610069FFC5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6C7696D71769C661000A7BDC /* game5: Sausen */,
 				6C7696D01768BAF5000A7BDC /* game3: Bakken */,
 				6C2C8F6E1766187A00DC193D /* game2: Hakken */,
 				6CCC8EA51764BDA000678B30 /* game1: Choose meat */,
@@ -414,6 +442,10 @@
 				6C2C8F771766199B00DC193D /* HakkenView.m in Sources */,
 				6C7696D31768BB07000A7BDC /* BakkenView.m in Sources */,
 				6C7696D61768BB39000A7BDC /* BakkenViewController.m in Sources */,
+				6C7696DA1769C673000A7BDC /* SausenViewController.m in Sources */,
+				6C7696DD1769C67F000A7BDC /* SausenView.m in Sources */,
+				6C7696E01769C6C0000A7BDC /* Sausenpicker.m in Sources */,
+				6C7696E6176A1CEB000A7BDC /* SausKleurenView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
