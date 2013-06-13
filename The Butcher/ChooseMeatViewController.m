@@ -81,7 +81,7 @@
         self.v.lblMeatInfo.alpha = 1;
         self.v.btnChoose.alpha = 1;
     } completion:^(BOOL finished) {
-
+        self.v.label.image = [Util createImageFromPNG:[NSString stringWithFormat:@"label_%d",[btnMeat.titleLabel.text intValue]] InDirectory:@"img/game/1" DoYouWantImageView:NO];
         self.v.label.transform = CGAffineTransformConcat(CGAffineTransformMakeScale(1.5, 1.5), CGAffineTransformMakeRotation(0.3));
         [UIView animateWithDuration:0.3 animations:^{
             self.v.label.transform = CGAffineTransformConcat(CGAffineTransformMakeScale(1, 1), CGAffineTransformMakeRotation(0));

@@ -25,6 +25,8 @@
 		6C515156175F84E300C7D8B6 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515155175F84E300C7D8B6 /* Util.m */; };
 		6C515159175F85CA00C7D8B6 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515158175F85CA00C7D8B6 /* MainView.m */; };
 		6C515184175FE61E00C7D8B6 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 6C515183175FE61E00C7D8B6 /* img */; };
+		6C7696D31768BB07000A7BDC /* BakkenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D21768BB07000A7BDC /* BakkenView.m */; };
+		6C7696D61768BB39000A7BDC /* BakkenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D51768BB39000A7BDC /* BakkenViewController.m */; };
 		6C7927691761DE840069FFC5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7927681761DE840069FFC5 /* GameViewController.m */; };
 		6C7927701761E63F0069FFC5 /* GameStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C79276F1761E63F0069FFC5 /* GameStartView.m */; };
 		6CCC8E8C17620E2100678B30 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E8B17620E2100678B30 /* GameView.m */; };
@@ -79,6 +81,10 @@
 		6C515157175F85CA00C7D8B6 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		6C515158175F85CA00C7D8B6 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		6C515183175FE61E00C7D8B6 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		6C7696D11768BB07000A7BDC /* BakkenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakkenView.h; sourceTree = "<group>"; };
+		6C7696D21768BB07000A7BDC /* BakkenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakkenView.m; sourceTree = "<group>"; };
+		6C7696D41768BB39000A7BDC /* BakkenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakkenViewController.h; sourceTree = "<group>"; };
+		6C7696D51768BB39000A7BDC /* BakkenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakkenViewController.m; sourceTree = "<group>"; };
 		6C7927671761DE840069FFC5 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		6C7927681761DE840069FFC5 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		6C79276E1761E63F0069FFC5 /* GameStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartView.h; sourceTree = "<group>"; };
@@ -232,9 +238,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6C7696D01768BAF5000A7BDC /* game3: Bakken */ = {
+			isa = PBXGroup;
+			children = (
+				6C7696D41768BB39000A7BDC /* BakkenViewController.h */,
+				6C7696D51768BB39000A7BDC /* BakkenViewController.m */,
+				6C7696D11768BB07000A7BDC /* BakkenView.h */,
+				6C7696D21768BB07000A7BDC /* BakkenView.m */,
+			);
+			name = "game3: Bakken";
+			sourceTree = "<group>";
+		};
 		6C7927631761DE610069FFC5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6C7696D01768BAF5000A7BDC /* game3: Bakken */,
 				6C2C8F6E1766187A00DC193D /* game2: Hakken */,
 				6CCC8EA51764BDA000678B30 /* game1: Choose meat */,
 				6CCC8E9817622D5D00678B30 /* HUD */,
@@ -394,6 +412,8 @@
 				6CCC8EAE1764BDFF00678B30 /* ChooseMeatViewController.m in Sources */,
 				6C2C8F71176618E700DC193D /* HakkenViewController.m in Sources */,
 				6C2C8F771766199B00DC193D /* HakkenView.m in Sources */,
+				6C7696D31768BB07000A7BDC /* BakkenView.m in Sources */,
+				6C7696D61768BB39000A7BDC /* BakkenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@
 #import "HUDViewController.h"
 #import "ChooseMeatViewController.h"
 #import "HakkenViewController.h"
+#import "BakkenViewController.h"
 
 @interface GameViewController : UIViewController
 
@@ -22,6 +23,7 @@
 @property (nonatomic, strong) HUDViewController *HUDVC;
 @property (nonatomic, strong) ChooseMeatViewController *ChooseMeatVC;
 @property (nonatomic, strong) HakkenViewController *HakkenVC;
+@property (nonatomic, strong) BakkenViewController *BakkenVC;
 
 
 @end

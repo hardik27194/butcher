@@ -70,8 +70,8 @@
         [self.btnChoose setBackgroundImage:btnChooseImg forState:UIControlStateNormal];
         self.btnChoose.alpha = 0;
         
-        self.label = [Util createImageFromPNG:@"label" InDirectory:@"img/game/1" DoYouWantImageView:YES];
-        self.label.frame = CGRectMake(190, 10, self.label.frame.size.width, self.label.frame.size.height);
+        self.label = [Util createImageFromPNG:@"label_1" InDirectory:@"img/game/1" DoYouWantImageView:YES];
+        self.label.frame = CGRectMake(150, 5, self.label.frame.size.width, self.label.frame.size.height);
         self.label.alpha = 0;
         [self addSubview:self.label];
     }

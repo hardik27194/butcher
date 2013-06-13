@@ -39,12 +39,16 @@
             [self.v.gameStartV removeFromSuperview];
             self.v.gameStartV = nil;
             
-            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
-            [self.v addSubview:self.ChooseMeatVC.v];
+//            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+//            [self.v addSubview:self.ChooseMeatVC.v];
             
             [self.v addSubview:self.HUDVC.v];
             [self.HUDVC.v.btnMenu addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
-
+            
+            self.model.timeInSeconds = 123;
+            self.model.meatID = 2;
+            self.model.progress = 3;
+            
             break;
             
         case 2:
@@ -59,8 +63,17 @@
         case 3:
             [self.HakkenVC.v removeFromSuperview];
             self.HakkenVC = nil;
-            NSLog(@"game3");
-            //game 3
+            
+            self.BakkenVC = [[BakkenViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.BakkenVC.v];
+            
+            break;
+            
+        case 4:
+            [self.BakkenVC.v removeFromSuperview];
+            self.BakkenVC = nil;
+            
+            NSLog(@"game4 toevoegen");
             break;
             
         default:

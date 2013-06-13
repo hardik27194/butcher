@@ -46,7 +46,6 @@
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
     float versch = [touch locationInView:self.v.superview].y - [touch previousLocationInView:self.v.superview].y;
-    NSLog(@"%f",versch);
     self.v.frame = CGRectMake(self.v.frame.origin.x, self.v.frame.origin.y + versch, self.v.frame.size.width, self.v.frame.size.height);
     if(self.v.frame.origin.y < 0){
         self.v.frame = CGRectMake(self.v.frame.origin.x, 0, self.v.frame.size.width, self.v.frame.size.height);
