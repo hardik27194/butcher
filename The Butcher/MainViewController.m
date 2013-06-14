@@ -33,6 +33,7 @@
         
         [self.MainView.btnInfo addTarget:self action:@selector(showInfo:) forControlEvents:UIControlEventTouchUpInside];
         [self.MainView.btnMakeBurger addTarget:self action:@selector(startGame:) forControlEvents:UIControlEventTouchUpInside];
+        [self.MainView.btnVote addTarget:self action:@selector(showVote:) forControlEvents:UIControlEventTouchUpInside];
         
         
         UITapGestureRecognizer *gestureRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnArrows:)];
@@ -105,6 +106,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismisOverlays:) name:@"SHOW_MENU" object:self.infoVC];
 }
 
+-(void)showVote:(id)sender{
+    self.voteVC = [[VoteViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentViewController:self.voteVC animated:YES completion:^{}];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismisOverlays:) name:@"SHOW_MENU" object:self.infoVC];
+}
+
 -(void)startGame:(id)sender{
     self.gameVC = [[GameViewController alloc] initWithNibName:nil bundle:nil];
     [self presentViewController:self.gameVC animated:YES completion:nil];
@@ -115,6 +122,7 @@
     [self dismissViewControllerAnimated:YES completion:^{
         self.infoVC = nil;
         self.gameVC = nil;
+        self.voteVC = nil;
     }];
 }
 

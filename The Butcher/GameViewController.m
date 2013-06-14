@@ -48,7 +48,7 @@
             self.model.timeInSeconds = 123;
             self.model.meatID = 2;
             self.model.bakwijze =3;
-            self.model.progress = 5;
+            self.model.progress = 4;
             
             break;
             
@@ -74,9 +74,14 @@
             [self.BakkenVC.v removeFromSuperview];
             self.BakkenVC = nil;
             
+            self.ExtraVC = [[ExtraViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.ExtraVC.v];
+            
             break;
             
         case 5:
+            [self.ExtraVC.v removeFromSuperview];
+            self.ExtraVC = nil;
             
             self.SausenVC = [[SausenViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
             [self.v addSubview:self.SausenVC.v];
@@ -90,6 +95,8 @@
             [self.SausenVC.v removeFromSuperview];
             [self.SausenVC.kleurV removeFromSuperview];
             self.SausenVC = nil;
+            
+            //toevoeven van submit.
             break;
         default:
             break;

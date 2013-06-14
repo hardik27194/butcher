@@ -25,6 +25,7 @@
 		6C515156175F84E300C7D8B6 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515155175F84E300C7D8B6 /* Util.m */; };
 		6C515159175F85CA00C7D8B6 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C515158175F85CA00C7D8B6 /* MainView.m */; };
 		6C515184175FE61E00C7D8B6 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 6C515183175FE61E00C7D8B6 /* img */; };
+		6C5C7C04176A76FB007220F2 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7C03176A76FB007220F2 /* VoteViewController.m */; };
 		6C7696D31768BB07000A7BDC /* BakkenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D21768BB07000A7BDC /* BakkenView.m */; };
 		6C7696D61768BB39000A7BDC /* BakkenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D51768BB39000A7BDC /* BakkenViewController.m */; };
 		6C7696DA1769C673000A7BDC /* SausenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696D91769C673000A7BDC /* SausenViewController.m */; };
@@ -33,6 +34,10 @@
 		6C7696E6176A1CEB000A7BDC /* SausKleurenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7696E5176A1CEB000A7BDC /* SausKleurenView.m */; };
 		6C7927691761DE840069FFC5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7927681761DE840069FFC5 /* GameViewController.m */; };
 		6C7927701761E63F0069FFC5 /* GameStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C79276F1761E63F0069FFC5 /* GameStartView.m */; };
+		6C7DC21D176B107C00D82FEA /* ExtraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC21C176B107C00D82FEA /* ExtraViewController.m */; };
+		6C7DC220176B108900D82FEA /* ExtraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC21F176B108900D82FEA /* ExtraView.m */; };
+		6C7DC223176B17BF00D82FEA /* ExtraPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC222176B17BF00D82FEA /* ExtraPicker.m */; };
+		6C7DC226176B19F400D82FEA /* Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC225176B19F400D82FEA /* Extra.m */; };
 		6CCC8E8C17620E2100678B30 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E8B17620E2100678B30 /* GameView.m */; };
 		6CCC8E901762177800678B30 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E8F1762177800678B30 /* AppModel.m */; };
 		6CCC8E9417622CEB00678B30 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC8E9317622CEB00678B30 /* HUDViewController.m */; };
@@ -85,6 +90,8 @@
 		6C515157175F85CA00C7D8B6 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		6C515158175F85CA00C7D8B6 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		6C515183175FE61E00C7D8B6 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		6C5C7C02176A76FB007220F2 /* VoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteViewController.h; sourceTree = "<group>"; };
+		6C5C7C03176A76FB007220F2 /* VoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteViewController.m; sourceTree = "<group>"; };
 		6C7696D11768BB07000A7BDC /* BakkenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakkenView.h; sourceTree = "<group>"; };
 		6C7696D21768BB07000A7BDC /* BakkenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakkenView.m; sourceTree = "<group>"; };
 		6C7696D41768BB39000A7BDC /* BakkenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakkenViewController.h; sourceTree = "<group>"; };
@@ -101,6 +108,14 @@
 		6C7927681761DE840069FFC5 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		6C79276E1761E63F0069FFC5 /* GameStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartView.h; sourceTree = "<group>"; };
 		6C79276F1761E63F0069FFC5 /* GameStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStartView.m; sourceTree = "<group>"; };
+		6C7DC21B176B107C00D82FEA /* ExtraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraViewController.h; sourceTree = "<group>"; };
+		6C7DC21C176B107C00D82FEA /* ExtraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraViewController.m; sourceTree = "<group>"; };
+		6C7DC21E176B108900D82FEA /* ExtraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraView.h; sourceTree = "<group>"; };
+		6C7DC21F176B108900D82FEA /* ExtraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraView.m; sourceTree = "<group>"; };
+		6C7DC221176B17BF00D82FEA /* ExtraPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraPicker.h; sourceTree = "<group>"; };
+		6C7DC222176B17BF00D82FEA /* ExtraPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraPicker.m; sourceTree = "<group>"; };
+		6C7DC224176B19F400D82FEA /* Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extra.h; sourceTree = "<group>"; };
+		6C7DC225176B19F400D82FEA /* Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extra.m; sourceTree = "<group>"; };
 		6CCC8E8A17620E2100678B30 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		6CCC8E8B17620E2100678B30 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		6CCC8E8E1762177800678B30 /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
@@ -199,6 +214,7 @@
 				6C515154175F84E300C7D8B6 /* Util.h */,
 				6C515155175F84E300C7D8B6 /* Util.m */,
 				6CCC8E8D1762176A00678B30 /* Model */,
+				6C5C7C01176A76E4007220F2 /* Vote */,
 				6C7927631761DE610069FFC5 /* Game */,
 				6CFEA9BC1760D8E7001F643C /* Info */,
 				6C515111175F7D9C00C7D8B6 /* AppDelegate.h */,
@@ -250,6 +266,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6C5C7C01176A76E4007220F2 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C7C02176A76FB007220F2 /* VoteViewController.h */,
+				6C5C7C03176A76FB007220F2 /* VoteViewController.m */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
 		6C7696D01768BAF5000A7BDC /* game3: Bakken */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				6C7696D71769C661000A7BDC /* game5: Sausen */,
+				6C7DC21A176B105900D82FEA /* game4: extra's */,
 				6C7696D01768BAF5000A7BDC /* game3: Bakken */,
 				6C2C8F6E1766187A00DC193D /* game2: Hakken */,
 				6CCC8EA51764BDA000678B30 /* game1: Choose meat */,
@@ -300,6 +326,21 @@
 				6C79276F1761E63F0069FFC5 /* GameStartView.m */,
 			);
 			name = Start;
+			sourceTree = "<group>";
+		};
+		6C7DC21A176B105900D82FEA /* game4: extra's */ = {
+			isa = PBXGroup;
+			children = (
+				6C7DC21B176B107C00D82FEA /* ExtraViewController.h */,
+				6C7DC21C176B107C00D82FEA /* ExtraViewController.m */,
+				6C7DC21E176B108900D82FEA /* ExtraView.h */,
+				6C7DC21F176B108900D82FEA /* ExtraView.m */,
+				6C7DC221176B17BF00D82FEA /* ExtraPicker.h */,
+				6C7DC222176B17BF00D82FEA /* ExtraPicker.m */,
+				6C7DC224176B19F400D82FEA /* Extra.h */,
+				6C7DC225176B19F400D82FEA /* Extra.m */,
+			);
+			name = "game4: extra's";
 			sourceTree = "<group>";
 		};
 		6CCC8E8D1762176A00678B30 /* Model */ = {
@@ -446,6 +487,11 @@
 				6C7696DD1769C67F000A7BDC /* SausenView.m in Sources */,
 				6C7696E01769C6C0000A7BDC /* Sausenpicker.m in Sources */,
 				6C7696E6176A1CEB000A7BDC /* SausKleurenView.m in Sources */,
+				6C5C7C04176A76FB007220F2 /* VoteViewController.m in Sources */,
+				6C7DC21D176B107C00D82FEA /* ExtraViewController.m in Sources */,
+				6C7DC220176B108900D82FEA /* ExtraView.m in Sources */,
+				6C7DC223176B17BF00D82FEA /* ExtraPicker.m in Sources */,
+				6C7DC226176B19F400D82FEA /* Extra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

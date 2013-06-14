@@ -11,6 +11,7 @@
 #import "Util.h"
 #import "InfoViewController.h"
 #import "GameViewController.h"
+#import "VoteViewController.h"
 
 @interface MainViewController : UIViewController<UIScrollViewDelegate>
 @property (nonatomic, strong) MainView *MainView;
@@ -18,6 +19,7 @@
 @property (nonatomic) BOOL showingArrows;
 @property (nonatomic, strong) InfoViewController *infoVC;
 @property (nonatomic, strong) GameViewController *gameVC;
+@property (nonatomic, strong) VoteViewController *voteVC;
 
 
 @end
