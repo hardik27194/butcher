@@ -10,11 +10,14 @@
 #import "Util.h"
 #import "AppModel.h"
 #import "ExtraView.h"
+#import "Extra.h"
 
 @interface ExtraViewController : UIViewController
 
 @property (nonatomic, strong) AppModel *model;
 @property (nonatomic, strong) ExtraView *v;
+@property (nonatomic, strong) NSMutableArray *arrExtras;
+@property (nonatomic, strong) NSMutableArray *arrGekozenExtras;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andModel:(AppModel *)model;
 

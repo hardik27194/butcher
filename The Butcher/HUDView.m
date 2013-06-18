@@ -39,27 +39,36 @@
         self.lblGameInfo.font = [UIFont fontWithName:@"Franchise" size:23];
         [self addSubview:self.lblGameInfo];
         
+        self.stap1 = [Util createImageFromPNG:@"stap1" InDirectory:@"img/game/menu" DoYouWantImageView:YES];
+        self.stap1.frame = CGRectMake((frame.size.width/2)-180, frame.size.height - self.stap1.frame.size.height - 190, self.stap1.frame.size.width, self.stap1.frame.size.height);
+        [self addSubview:self.stap1];
         
-        //OVERLAY MET EXTRA INFO DEPRECATED
-//        UIImage *btnOverlayImg = [Util createImageFromPNG:@"infoOverlay" InDirectory:@"img/game" DoYouWantImageView:NO];
-//        self.btnOverlay = [[UIButton alloc] initWithFrame:CGRectMake((frame.size.width/2) - (btnOverlayImg.size.width/2), 0, btnOverlayImg.size.width, btnOverlayImg.size.height)];
-//        [self.btnOverlay setBackgroundImage:btnOverlayImg forState:UIControlStateNormal];
-//        [self.btnOverlay setBackgroundImage:btnOverlayImg forState:UIControlStateHighlighted];
-//        [self addSubview:self.btnOverlay];
-//        [self.btnOverlay addTarget:self action:@selector(removeOverlay:) forControlEvents:UIControlEventTouchUpInside];
+        self.stap2 = [Util createImageFromPNG:@"stap2" InDirectory:@"img/game/menu" DoYouWantImageView:YES];
+        self.stap2.frame = CGRectMake((frame.size.width/2)-(self.stap2.frame.size.width/2), frame.size.height - self.stap2.frame.size.height - 190, self.stap2.frame.size.width, self.stap2.frame.size.height);
+        [self addSubview:self.stap2];
+        
+        self.stap3 = [Util createImageFromPNG:@"stap3" InDirectory:@"img/game/menu" DoYouWantImageView:YES];
+        self.stap3.frame = CGRectMake((frame.size.width/2)+100, frame.size.height - self.stap3.frame.size.height - 190, self.stap3.frame.size.width, self.stap3.frame.size.height);
+        [self addSubview:self.stap3];
+        
+        self.stap4 = [Util createImageFromPNG:@"stap4" InDirectory:@"img/game/menu" DoYouWantImageView:YES];
+        self.stap4.frame = CGRectMake((frame.size.width/2)-180, frame.size.height - self.stap4.frame.size.height - 80, self.stap4.frame.size.width, self.stap4.frame.size.height);
+        [self addSubview:self.stap4];
+        
+        self.stap5 = [Util createImageFromPNG:@"stap5" InDirectory:@"img/game/menu" DoYouWantImageView:YES];
+        self.stap5.frame = CGRectMake((frame.size.width/2)-(self.stap5.frame.size.width/2), frame.size.height - self.stap5.frame.size.height - 80, self.stap5.frame.size.width, self.stap5.frame.size.height);
+        [self addSubview:self.stap5];
+        
+        self.stap6 = [Util createImageFromPNG:@"stap6" InDirectory:@"img/game/menu" DoYouWantImageView:YES];
+        self.stap6.frame = CGRectMake((frame.size.width/2)+100, frame.size.height - self.stap6.frame.size.height - 80, self.stap6.frame.size.width, self.stap6.frame.size.height);
+        [self addSubview:self.stap6];
+        
+        
 
     }
     return self;
 }
-//DEPRECATED
-//-(void)removeOverlay:(id)sender{
-//    [UIView animateWithDuration:1 animations:^{
-//        self.btnOverlay.alpha = 0;
-//    } completion:^(BOOL finished) {
-//        self.btnOverlay = nil;
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"OVERLAY_DISMISSED" object:self];
-//    }];
-//}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

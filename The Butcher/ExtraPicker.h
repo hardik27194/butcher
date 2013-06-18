@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExtraPicker : UIScrollView
+@interface ExtraPicker : UIScrollView<UIScrollViewDelegate>
+@property (nonatomic) float newX;
 
 @end

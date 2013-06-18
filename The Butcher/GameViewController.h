@@ -17,6 +17,8 @@
 #import "BakkenViewController.h"
 #import "SausenViewController.h"
 #import "ExtraViewController.h"
+#import "SpecialViewController.h"
+#import "SubmitViewController.h"
 
 @interface GameViewController : UIViewController
 
@@ -28,6 +30,9 @@
 @property (nonatomic, strong) BakkenViewController *BakkenVC;
 @property (nonatomic, strong) SausenViewController *SausenVC;
 @property (nonatomic, strong) ExtraViewController *ExtraVC;
+@property (nonatomic, strong) SpecialViewController *specialVC;
+
+@property (nonatomic, strong) SubmitViewController *submitVC;
 
 
 @end

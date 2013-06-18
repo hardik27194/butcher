@@ -59,7 +59,7 @@
         self.lblTotalSteps.backgroundColor = [UIColor clearColor];
         self.lblTotalSteps.font = [UIFont fontWithName:@"Franchise" size:19];
         self.lblTotalSteps.textColor = [UIColor whiteColor];
-        self.lblTotalSteps.text = @"5";
+        self.lblTotalSteps.text = @"6";
         [self addSubview:self.lblTotalSteps];
         
         self.lblCurrentStep = [[UILabel alloc] initWithFrame:CGRectMake(11, 5, 20, 20)];
@@ -73,8 +73,8 @@
 }
 
 -(void)gotoStep:(int)step{
-    double from = ((step - 1)*0.2);
-    double to = (step*0.2);
+    double from = ((step - 1)*0.16667);
+    double to = (step*0.16667);
     
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     anim.fromValue = [[NSNumber alloc] initWithDouble:from];

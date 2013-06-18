@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Util.h"
 
 @interface Extra : UIView
+
+@property (nonatomic, strong) UIButton *btnAdd;
+@property (nonatomic) int extraId;
+@property (nonatomic) BOOL toegevoegd;
+
+- (id)initWithFrame:(CGRect)frame andData:(NSDictionary *)data;
+
+-(void)showButton;
+-(void)hideButton;
 
 @end

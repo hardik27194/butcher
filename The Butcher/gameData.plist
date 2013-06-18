@@ -285,6 +285,10 @@
 		</dict>
 		<dict>
 			<key>desc</key>
+			<string>Add your final special touch!</string>
+		</dict>
+		<dict>
+			<key>desc</key>
 			<string>Submit your burger</string>
 		</dict>
 	</array>

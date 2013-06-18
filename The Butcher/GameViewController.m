@@ -39,16 +39,22 @@
             [self.v.gameStartV removeFromSuperview];
             self.v.gameStartV = nil;
             
-//            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
-//            [self.v addSubview:self.ChooseMeatVC.v];
+            //dit comenten bij een kortsluiting van games.
+            self.ChooseMeatVC = [[ChooseMeatViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.ChooseMeatVC.v];
             
             [self.v addSubview:self.HUDVC.v];
             [self.HUDVC.v.btnMenu addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
             
-            self.model.timeInSeconds = 123;
-            self.model.meatID = 2;
-            self.model.bakwijze =3;
-            self.model.progress = 4;
+            //KORTSLUITEN VAN BEPAALDE GAMES
+//            self.model.timeInSeconds = 123;
+//            self.model.meatID = 2;
+//            self.model.bakwijze =3;
+//            self.model.progress = 7;
+//            self.model.sausHoeveelheid = 56;
+//            self.model.sausID = 2;
+//            self.model.extras = [NSArray arrayWithObjects:[NSNumber numberWithInt:2],[NSNumber numberWithInt:12], nil];
+//            self.model.special = @"pis kak stront";
             
             break;
             
@@ -89,14 +95,29 @@
             break;
             
         case 6:
-            [self.HUDVC.v removeFromSuperview];
-            self.HUDVC = nil;
-            
             [self.SausenVC.v removeFromSuperview];
             [self.SausenVC.kleurV removeFromSuperview];
             self.SausenVC = nil;
             
-            //toevoeven van submit.
+            self.specialVC = [[SpecialViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.specialVC.v];
+            
+            break;
+            
+        case 7:
+            [self.HUDVC.v removeFromSuperview];
+            self.HUDVC = nil;
+            
+            [self.specialVC.v removeFromSuperview];
+            self.specialVC = nil;
+            
+            self.submitVC = [[SubmitViewController alloc] initWithNibName:nil bundle:nil andModel:self.model];
+            [self.v addSubview:self.submitVC.v];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showMenu:) name:@"ALL_DONE" object:self.submitVC];
+
+            
+            //toevoeven van submit..
+            NSLog(@"model: %@",self.model);
             break;
         default:
             break;

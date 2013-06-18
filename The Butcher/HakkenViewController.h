@@ -19,6 +19,7 @@
 @property (nonatomic) int hits;
 @property (nonatomic) BOOL started;
 @property (nonatomic, strong) AVAudioPlayer *chopSound;
+@property (nonatomic, strong) AVAudioPlayer *cowSound;
 @property (nonatomic, strong) NSTimer *timer;
 
 

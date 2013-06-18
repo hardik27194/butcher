@@ -54,7 +54,7 @@
 
 -(void)doneDrawing:(id)sender{
     self.model.sausID = self.v.picker.currentSaus;
-    self.model.sausHoeveelheid = 100-(self.kleurV.mouseMoveCount/4);
+    self.model.sausHoeveelheid = (self.kleurV.mouseMoveCount/4);
     self.model.progress = 6;
 }
 

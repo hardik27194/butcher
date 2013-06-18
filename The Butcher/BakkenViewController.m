@@ -42,6 +42,7 @@
     self.timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(timerCallback:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     self.vuursterkte = 20;
+    self.v.slider.value = 0;
 
     NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
     NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -119,6 +120,14 @@
     self.timer = nil;
     if (burnt) {
         NSLog(@"verbrande burger");
+        UIImage *img = [Util createImageFromPNG:@"burnt" InDirectory:@"img/game/3" DoYouWantImageView:NO];
+        [self.v.overlay setBackgroundImage:img forState:UIControlStateNormal];
+        [self.v.overlay setBackgroundImage:img forState:UIControlStateHighlighted];
+        self.v.overlay.alpha = 0;
+        [self.v addSubview:self.v.overlay];
+        [UIView animateWithDuration:0.3 animations:^{
+            self.v.overlay.alpha = 1;
+        }];
     }else{
         NSLog(@"niet verbrande burger");
         self.model.bakwijze = self.v.slider.value / 100;

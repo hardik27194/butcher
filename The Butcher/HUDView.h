@@ -20,4 +20,11 @@
 @property (nonatomic, strong) UIButton *btnHelp;
 @property (nonatomic, strong) UIButton *btnOverlay;
 
+@property (nonatomic, strong) UIImageView *stap1;
+@property (nonatomic, strong) UIImageView *stap2;
+@property (nonatomic, strong) UIImageView *stap3;
+@property (nonatomic, strong) UIImageView *stap4;
+@property (nonatomic, strong) UIImageView *stap5;
+@property (nonatomic, strong) UIImageView *stap6;
+
 @end

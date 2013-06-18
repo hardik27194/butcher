@@ -99,7 +99,7 @@
             self.started = NO;
             [self.chopSound stop];
             self.chopSound = nil;
-            self.model.progress = 3;
+            [self playCow];
             break;
             
         default:
@@ -107,8 +107,22 @@
     }
 }
 
+-(void)playCow{
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"cow" ofType:@"m4a" ] ];
+    NSError *error;
+    self.cowSound = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    self.cowSound.numberOfLoops = 0;
+    self.cowSound.delegate = self;
+    [self.cowSound play];
+}
+
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    [self.chopSound prepareToPlay];
+    if(player == self.cowSound){
+        self.model.progress = 3;
+    }else{
+        [self.chopSound prepareToPlay];
+    }
+    
 }
 
 

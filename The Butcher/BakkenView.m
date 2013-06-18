@@ -71,7 +71,7 @@
         [self addSubview:self.burger0];
         
         
-        UIImage *overlayImg = [Util createImageFromPNG:@"overlay" InDirectory:@"img/game/2" DoYouWantImageView:NO];
+        UIImage *overlayImg = [Util createImageFromPNG:@"overlay" InDirectory:@"img/game/3" DoYouWantImageView:NO];
         self.overlay = [[UIButton alloc] initWithFrame:CGRectMake((frame.size.width/2) - (overlayImg.size.width/2), 0, overlayImg.size.width, overlayImg.size.height)];
         [self.overlay setBackgroundImage:overlayImg forState:UIControlStateNormal];
         [self.overlay setBackgroundImage:overlayImg forState:UIControlStateHighlighted];

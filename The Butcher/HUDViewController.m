@@ -87,6 +87,31 @@
     [self.v.progressMeter gotoStep:self.model.progress];
     NSString *gametext = [[[self.model.gamedata objectForKey:@"minigames"] objectAtIndex:self.model.progress] objectForKey:@"desc"];
     self.v.lblGameInfo.text = [NSString stringWithFormat:@"%@", [gametext uppercaseString]];
+    
+    self.v.stap1.alpha = self.v.stap2.alpha = self.v.stap3.alpha = self.v.stap4.alpha = self.v.stap5.alpha = self.v.stap6.alpha = 0.2;
+    switch (self.model.progress) {
+        case 1:
+            self.v.stap1.alpha = 1;
+            break;
+        case 2:
+            self.v.stap2.alpha = 1;
+            break;
+        case 3:
+            self.v.stap3.alpha = 1;
+            break;
+        case 4:
+            self.v.stap4.alpha = 1;
+            break;
+        case 5:
+            self.v.stap5.alpha = 1;
+            break;
+        case 6:
+            self.v.stap6.alpha = 1;
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)viewDidLoad

@@ -16,4 +16,6 @@
 @property (nonatomic, strong) UIButton *btnDone;
 @property (nonatomic, strong) UILabel *lblHoeveelheid;
 
+-(void)animateTxt;
+
 @end
