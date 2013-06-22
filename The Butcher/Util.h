@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Reachability.h"
 
 @interface Util : NSObject
 
@@ -17,5 +18,7 @@
 + (UIButton *)createMenuButtonWithXpos:(CGFloat)x AndYpos:(CGFloat)y;
 
 +(CGFloat)radiansFromDegrees:(float)deg;
++(BOOL)networkConnectionAvailable;
+
 
 @end

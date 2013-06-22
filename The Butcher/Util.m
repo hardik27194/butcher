@@ -58,6 +58,20 @@
     return (CGFloat)((deg) / 180.0 * M_PI);
 }
 
++(BOOL)networkConnectionAvailable{
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    if (networkStatus == NotReachable) {
+        NSLog(@"There IS NO internet connection");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error" message:@"There is no working internet connection available." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        return NO;
+    } else {
+        NSLog(@"There IS internet connection");
+        return YES;
+    }
+}
+
 
 
 

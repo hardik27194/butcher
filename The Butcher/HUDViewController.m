@@ -55,7 +55,7 @@
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
     if (touch.tapCount == 1){
-        self.showing = !self.showing;
+        //self.showing = !self.showing;
     }else{
         if(self.v.frame.origin.y < 180){
             self.showing = YES;

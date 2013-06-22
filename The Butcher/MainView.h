@@ -11,15 +11,12 @@
 
 @interface MainView : UIScrollView
 
-@property (nonatomic, strong) UIButton *btnContinue;
 @property (nonatomic, strong) UIButton *btnVote;
 @property (nonatomic, strong) UIButton *btnInfo;
 @property (nonatomic, strong) UIButton *btnMakeBurger;
-@property (nonatomic, strong) UIImageView *screen2;
-@property (nonatomic, strong) UIImageView *screen3;
-@property (nonatomic, strong) UIImageView *screen2Arrows;
+@property (nonatomic, strong) UIImageView *logo;
 
 
--(void)gotoScreen3;
+-(void)gotoScreen2;
 
 @end

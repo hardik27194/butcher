@@ -31,28 +31,31 @@
 }
 
 -(void)submit:(id)sender{
-    [UIView animateWithDuration:0.3 animations:^{
-        self.v.frame = CGRectMake(self.v.frame.origin.x, self.v.frame.origin.y +110, self.v.frame.size.width, self.v.frame.size.height);
-    }];
-    self.model.burgerName = self.v.txt.text;
-    self.v.txt.userInteractionEnabled = NO;
-    [self.v.txt resignFirstResponder];
-    self.v.btnSave.userInteractionEnabled = NO;
-    self.v.btnSave.alpha = 0;
-    [self.v addSubview:self.v.loader];
-    [self.v.loader startAnimating];
-    if (FBSession.activeSession.state == FBSessionStateOpen) {
-        NSLog(@"logged in");
-        [self readFBData];
-    } else {
-        NSLog(@"not logged in");
-        [FBSession openActiveSessionWithReadPermissions:[NSArray arrayWithObjects:@"basic_info",@"email", nil] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
-            [self sessionStateChanged:session state:status error:error];
-            NSLog(@"session changed: %@",session);
-
+    if ([Util networkConnectionAvailable]) {
+        [UIView animateWithDuration:0.3 animations:^{
+            self.v.frame = CGRectMake(self.v.frame.origin.x, 0, self.v.frame.size.width, self.v.frame.size.height);
         }];
-    }
+        self.model.burgerName = self.v.txt.text;
+        self.v.txt.userInteractionEnabled = NO;
+        [self.v.txt resignFirstResponder];
+        self.v.btnSave.userInteractionEnabled = NO;
+        self.v.btnSave.alpha = 0;
+        [self.v addSubview:self.v.loader];
+        [self.v.loader startAnimating];
+        if (FBSession.activeSession.state == FBSessionStateOpen) {
+            NSLog(@"logged in");
+            [self readFBData];
+        } else {
+            NSLog(@"not logged in");
+            [FBSession openActiveSessionWithReadPermissions:[NSArray arrayWithObjects:@"basic_info",@"email", nil] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                [self sessionStateChanged:session state:status error:error];
+                NSLog(@"session changed: %@",session);
+                
+            }];
+        }
 
+    }
+    
 }
 
 - (void)sessionStateChanged:(FBSession *)session
@@ -68,6 +71,7 @@
             [self readFBData];
             break;
         case FBSessionStateClosed:
+            break;
         case FBSessionStateClosedLoginFailed:
             self.v.btnSave.userInteractionEnabled = YES;
             self.v.txt.userInteractionEnabled = YES;
@@ -132,7 +136,7 @@
     [self.v.textbox removeFromSuperview];
     [self.v.btnSave removeFromSuperview];
     [self.v.loader removeFromSuperview];
-    UIButton *menu = [Util createMenuButtonWithXpos:((self.v.frame.size.width/2) - 32) AndYpos:200];
+    UIButton *menu = [Util createMenuButtonWithXpos:((self.v.frame.size.width/2) - 32) AndYpos:240];
     [self.v addSubview:menu];
     [menu addTarget:self action:@selector(btnMenuHandler:) forControlEvents:UIControlEventTouchUpInside];
 }
@@ -143,7 +147,7 @@
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     [UIView animateWithDuration:0.3 animations:^{
-        self.v.frame = CGRectMake(self.v.frame.origin.x, self.v.frame.origin.y -110, self.v.frame.size.width, self.v.frame.size.height);
+        self.v.frame = CGRectMake(self.v.frame.origin.x,-110, self.v.frame.size.width, self.v.frame.size.height);
     }];
     return YES;
 }
@@ -151,7 +155,7 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.v.txt resignFirstResponder];
     [UIView animateWithDuration:0.3 animations:^{
-        self.v.frame = CGRectMake(self.v.frame.origin.x, self.v.frame.origin.y +110, self.v.frame.size.width, self.v.frame.size.height);
+        self.v.frame = CGRectMake(self.v.frame.origin.x, 0, self.v.frame.size.width, self.v.frame.size.height);
     }];
     return YES;
 }

@@ -38,6 +38,7 @@
 		6C7DC220176B108900D82FEA /* ExtraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC21F176B108900D82FEA /* ExtraView.m */; };
 		6C7DC223176B17BF00D82FEA /* ExtraPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC222176B17BF00D82FEA /* ExtraPicker.m */; };
 		6C7DC226176B19F400D82FEA /* Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DC225176B19F400D82FEA /* Extra.m */; };
+		6CABB2891775E4630086928A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CABB2861775E4630086928A /* Reachability.m */; };
 		6CADD624176C7D2700C86B31 /* cow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6CADD623176C7D2700C86B31 /* cow.m4a */; };
 		6CADD628176C812000C86B31 /* SpecialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CADD627176C812000C86B31 /* SpecialView.m */; };
 		6CADD62B176C812D00C86B31 /* SpecialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CADD62A176C812D00C86B31 /* SpecialViewController.m */; };
@@ -139,6 +140,8 @@
 		6C7DC222176B17BF00D82FEA /* ExtraPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraPicker.m; sourceTree = "<group>"; };
 		6C7DC224176B19F400D82FEA /* Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extra.h; sourceTree = "<group>"; };
 		6C7DC225176B19F400D82FEA /* Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extra.m; sourceTree = "<group>"; };
+		6CABB2851775E4630086928A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6CABB2861775E4630086928A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		6CADD623176C7D2700C86B31 /* cow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = cow.m4a; sourceTree = "<group>"; };
 		6CADD626176C812000C86B31 /* SpecialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialView.h; sourceTree = "<group>"; };
 		6CADD627176C812000C86B31 /* SpecialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialView.m; sourceTree = "<group>"; };
@@ -289,8 +292,7 @@
 		6C515108175F7D9C00C7D8B6 /* The Butcher */ = {
 			isa = PBXGroup;
 			children = (
-				6C515154175F84E300C7D8B6 /* Util.h */,
-				6C515155175F84E300C7D8B6 /* Util.m */,
+				6CABB28B1775E47E0086928A /* Utils */,
 				6CCC8E8D1762176A00678B30 /* Model */,
 				6C5C7C01176A76E4007220F2 /* Vote */,
 				6C7927631761DE610069FFC5 /* Game */,
@@ -422,6 +424,17 @@
 				6C7DC225176B19F400D82FEA /* Extra.m */,
 			);
 			name = "game4: extra's";
+			sourceTree = "<group>";
+		};
+		6CABB28B1775E47E0086928A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6C515154175F84E300C7D8B6 /* Util.h */,
+				6C515155175F84E300C7D8B6 /* Util.m */,
+				6CABB2851775E4630086928A /* Reachability.h */,
+				6CABB2861775E4630086928A /* Reachability.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		6CADD625176C7DCA00C86B31 /* game6: Special */ = {
@@ -636,6 +649,7 @@
 				6CADD665176E223B00C86B31 /* AFURLConnectionOperation.m in Sources */,
 				6CADD666176E223B00C86B31 /* AFXMLRequestOperation.m in Sources */,
 				6CADD667176E223B00C86B31 /* UIImageView+AFNetworking.m in Sources */,
+				6CABB2891775E4630086928A /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

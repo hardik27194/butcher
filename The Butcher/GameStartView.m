@@ -20,7 +20,7 @@
         [self addSubview:self.btnMenu];
         
         UIImageView *info = [Util createImageFromPNG:@"info" InDirectory:@"img/game/start" DoYouWantImageView:YES];
-        info.frame = CGRectMake((frame.size.width/2)-(info.frame.size.width/2), 12, info.frame.size.width, info.frame.size.height);
+        info.frame = CGRectMake((frame.size.width/2)-(info.frame.size.width/2), 62, info.frame.size.width, info.frame.size.height);
         [self addSubview:info];
         
         UIImage *btnContinueImg = [Util createImageFromPNG:@"btnContinue" InDirectory:@"img/game/start" DoYouWantImageView:NO];

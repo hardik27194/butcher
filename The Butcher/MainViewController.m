@@ -35,68 +35,22 @@
         [self.MainView.btnMakeBurger addTarget:self action:@selector(startGame:) forControlEvents:UIControlEventTouchUpInside];
         [self.MainView.btnVote addTarget:self action:@selector(showVote:) forControlEvents:UIControlEventTouchUpInside];
         
-        
-        UITapGestureRecognizer *gestureRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnArrows:)];
-        gestureRecogniser.numberOfTapsRequired = 1;
-        [self.MainView.screen2Arrows addGestureRecognizer:gestureRecogniser];
     }
     return self;
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    if(self.MainView.contentOffset.y >= 120 && self.MainView.contentOffset.y < 320){
-        self.MainView.screen2.alpha = (self.MainView.contentOffset.y -120)/200;
-    }
-    if(self.MainView.contentOffset.y >= 320){
-        self.MainView.screen2.alpha = 1;
-        if(!self.showingArrows){
-            [self performSelector:@selector(showArrows:) withObject:nil afterDelay:2];
-            self.showingArrows = YES;
-        }
-    }
-    if(self.MainView.contentOffset.y < 120){
-        self.MainView.screen2.alpha = 0;
-    }
-    if(self.MainView.contentOffset.y >= 350 && self.MainView.contentOffset.y <= 500){
-        self.MainView.screen3.alpha = (self.MainView.contentOffset.y -350)/150;
-    }
-    if(self.MainView.contentOffset.y >= 480 && self.MainView.contentOffset.y <= 580){
-        self.MainView.btnMakeBurger.alpha = (self.MainView.contentOffset.y -480)/100;
-    }
-    if(self.MainView.contentOffset.y >= 540 && self.MainView.contentOffset.y <=640){
-        self.MainView.btnInfo.alpha = (self.MainView.contentOffset.y -540)/100;
-        self.MainView.btnVote.alpha = (self.MainView.contentOffset.y -540)/100;
-    }
-    if(self.MainView.contentOffset.y >= 580){
-        self.MainView.screen3.alpha = 1;
-        self.MainView.btnMakeBurger.alpha = 1;
-    }
-    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"alreadyScrolled"] && self.MainView.contentOffset.y > 500){
+        if(![[NSUserDefaults standardUserDefaults] boolForKey:@"alreadyScrolled"] && self.MainView.contentOffset.y >= 320){
         NSLog(@"syncing");
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"alreadyScrolled"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
--(void)showArrows:(id)sender{
-    [UIView animateWithDuration:0.5 animations:^{
-        self.MainView.screen2Arrows.alpha = 1;
-    } completion:^(BOOL finished) {
-        UITapGestureRecognizer *gestureRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnArrows:)];
-        gestureRecogniser.numberOfTapsRequired = 1;
-        [self.MainView.screen2Arrows addGestureRecognizer:gestureRecogniser];
-    }];
-}
-
--(void)handleTapOnArrows:(id)sender{
-    NSLog(@"tapped");
-    [self.MainView gotoScreen3];
-}
 
 -(void)checkIfAlreadyScrolled:(id)sender{
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"alreadyScrolled"]){
-        [self.MainView gotoScreen3];
-        self.MainView.screen3.alpha = self.MainView.btnVote.alpha = self.MainView.btnInfo.alpha =   self.MainView.btnMakeBurger.alpha = 1;
+        [self.MainView gotoScreen2];
     }
 }
 
@@ -107,9 +61,11 @@
 }
 
 -(void)showVote:(id)sender{
-    self.voteVC = [[VoteViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentViewController:self.voteVC animated:YES completion:^{}];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismisOverlays:) name:@"SHOW_MENU" object:self.infoVC];
+    if([Util networkConnectionAvailable]){
+        self.voteVC = [[VoteViewController alloc] initWithNibName:nil bundle:nil];
+        [self presentViewController:self.voteVC animated:YES completion:^{}];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismisOverlays:) name:@"SHOW_MENU" object:self.infoVC];
+    }
 }
 
 -(void)startGame:(id)sender{
@@ -119,7 +75,7 @@
 }
 
 -(void)dismisOverlays:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:^{
+    [[self presentedViewController] dismissViewControllerAnimated:YES completion:^{
         self.infoVC = nil;
         self.gameVC = nil;
         self.voteVC = nil;

@@ -65,7 +65,7 @@
 
 -(void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration{
     
-    if (acceleration.x < -1.95 && self.started) {
+    if (acceleration.x < -1.85 && self.started) {
         self.hits++;
     }
 }
