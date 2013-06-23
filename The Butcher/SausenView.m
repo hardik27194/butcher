@@ -24,7 +24,7 @@
         [self addSubview:self.btnChoose];
         
         self.line = [Util createImageFromPNG:@"line" InDirectory:@"img/game/5" DoYouWantImageView:YES];
-        self.line.frame = CGRectMake(frame.size.width-230, 75, self.line.frame.size.width, self.line.frame.size.height);
+        self.line.frame = CGRectMake(frame.size.width-230, 80, self.line.frame.size.width, self.line.frame.size.height);
         [self addSubview:self.line];
         
         self.lblName = [[UILabel alloc] initWithFrame:CGRectMake(self.line.frame.origin.x, 50, self.line.frame.size.width, 30)];

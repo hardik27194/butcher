@@ -23,7 +23,7 @@
         [btnMenu addTarget:self action:@selector(backToMenu:) forControlEvents:UIControlEventTouchUpInside];
         
         self.webview = [[UIWebView alloc] initWithFrame:[Util getMainScreenLandscape]];
-        NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ducksarethebest.com/"]];
+        NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.16.4/Devine/2DEV/MAIV/THE%20BUTCHER/client/src/"]];
         self.webview.allowsInlineMediaPlayback = YES;
         [self.webview loadRequest:req];
         self.webview.delegate = self;

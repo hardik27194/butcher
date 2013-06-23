@@ -165,7 +165,7 @@
 			<key>B</key>
 			<integer>27</integer>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>A flavoring sauce, orginally used as marinade for meat cooked in the barbecue style.</string>
 			<key>name</key>
 			<string>BBQ</string>
 		</dict>
@@ -177,7 +177,7 @@
 			<key>B</key>
 			<integer>56</integer>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>A luxurious sauce based on the known fungus. Gives your burger a unique taste.</string>
 			<key>name</key>
 			<string>Truffle</string>
 		</dict>
@@ -189,7 +189,7 @@
 			<key>B</key>
 			<integer>164</integer>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>A Levantine dish of eggplant mashed and mixed with olive oil and various seasonings.</string>
 			<key>name</key>
 			<string>Babaganouch</string>
 		</dict>
@@ -201,7 +201,7 @@
 			<key>B</key>
 			<integer>14</integer>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>A homemade sauce, the recipe is a secret. Hallowed by our customers.</string>
 			<key>name</key>
 			<string>Butcher Sauce</string>
 		</dict>
@@ -213,7 +213,7 @@
 			<key>B</key>
 			<integer>215</integer>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>Paste made from ground, hulled sesame seeds. Appears as a component of babaganoush.</string>
 			<key>name</key>
 			<string>Tahini</string>
 		</dict>
@@ -222,37 +222,37 @@
 	<array>
 		<dict>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>One of the most populair cuts of the Angus, due to its tenderness. It&apos;s known to be very meaty.</string>
 			<key>name</key>
 			<string>rib</string>
 		</dict>
 		<dict>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>The most tender of the major wholesale cuts. Includes desirable cuts like T-bone and Porterhouse steaks.</string>
 			<key>name</key>
 			<string>Short Loin</string>
 		</dict>
 		<dict>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>Is usually divided into several types of steak. Altough known to be a very tough cut, the bottom has its tenderness.</string>
 			<key>name</key>
 			<string>Sirloan</string>
 		</dict>
 		<dict>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>Due to the constant use of this muscle by the Aberdeen Angus, this cut is extremely tough.</string>
 			<key>name</key>
 			<string>Fore Shank</string>
 		</dict>
 		<dict>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>A long, flat cut, prized for its flavour rather than tenderness. Very similar to the flank.</string>
 			<key>name</key>
 			<string>Short Plate</string>
 		</dict>
 		<dict>
 			<key>desc</key>
-			<string>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</string>
+			<string>Known to be one of the most well-exercised cuts. Relatively long and flat yet very tender.</string>
 			<key>name</key>
 			<string>Flank</string>
 		</dict>
