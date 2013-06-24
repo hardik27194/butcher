@@ -77,6 +77,7 @@
             break;
             
         case 4:
+
             [self.BakkenVC.v removeFromSuperview];
             self.BakkenVC = nil;
             
